@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SỮA ĐẬU NÀNH NÓNG</title>
+    <link rel="stylesheet" href="suadaunanh.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/53/59/11/535911be0a99ba45c1b34c55a2af7041.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- MENU -->
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Về Chúng Tôi</a></li>
+                    <li class="blog-dropdown">
+                        <a href="hi.html">Du Lịch Đà Lạt</a>
+                        <div class="blog-dropdown-content">
+                            <a href="kinh nghiệm.html">Kinh Nghiệm</a>
+                            <a href="blog.html">Blog</a>
+                        </div>
+                    <li class="service-dropdown">
+                        <a href="tour.html">Tour Du Lịch</a>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--banner  -->
+
+    
+    <header class="page-header">
+        <h1 class="text-banner">SỮA ĐẬU NÀNH NÓNG</h1>
+      </header>
+    
+    <!--BODY  -->
+    <div class="container">
+        <div class="book-ticket">
+            <div class="images-container">
+
+                <div class="images">
+                    <img src="https://cdn.eva.vn/upload/4-2023/images/2023-11-14/5-quan-sua-dau-nanh-noi-tieng-nhat-da-lat-ai-cung-khen-tam-tac-vi-qua-xuat-sac-quan-sua-dau-nanh-ngon-1699955406-174-width660height660.jpg" alt="" id="hinh">
+                    <img src="data:image/jpeg;base64,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" alt="" id="hinh">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScVu2nQvDuDAwSSbPWRZ1q9M2bHqwXBYB19g&s" alt="" id="hinh">
+                    <img src="data:image/jpeg;base64,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" alt="" id="hinh">
+                </div>
+            </div>
+            <div class="info-book">
+                <h1> <i class="bi bi-geo-alt-fill"></i>SỮA ĐẬU NÀNH NÓNG</h1>
+                <script src="stars.js"></script> 
+                <div class="tour-suadaunanh">
+                    <div class=" stars"></div>
+                </div>
+                <p>Địa chỉ: Chợ đêm Đà Lạt - Nguyễn Thị Minh Khai, Phường 1, Tp.Đà Lạt, Lâm Đồng</p>
+                <p>Giờ mở cửa: Buổi tối </p>
+                <p>Giá vé tham quan: Miễn phí.</p>
+            </div>
+
+        </div>
+
+
+        <!-- THÔNG TIN HÀNH TRÌNH -->
+        <div class="page-container" >
+            <div class="page-content" style="
+            display: flex;
+            overflow: visible;
+            align-items: flex-start;
+        ">
+                <div class="info-tour"  style="margin: 0;">
+                    <h1>GOOGLE MAPS</h1>
+                    <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999290.1652812264!2d107.28371974687497!3d11.941426400000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317113ff4e41e7c3%3A0x21cff9ad21a7243c!2zQ2jhu6MgxJDDqm0gxJDDoCBM4bqhdA!5e0!3m2!1svi!2s!4v1714306822204!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    <!-- ĐÁNH GIÁ -->
+                    <!-- HIỆN ĐÁNH GIÁ Ở ĐÂY -->
+                    <div>
+                        <h1>CÁC ĐÁNH GIÁ GẦN ĐÂY</h1>
+                        <hr>
+                    </div>
+                    <div class="result" id="result"></div>
+
+
+
+                    <h1>GỬI ĐÁNH GIÁ</h1>
+                    <hr>
+
+
+                    <div class="form">
+                        <div class="comment-form">
+                            <input type="text" value="" id="tour_name" hidden>
+                            <!-- Khung nhập bình luận -->
+                            <div class="form-group">
+                                <textarea id="description" placeholder="Viết bình luận của bạn"></textarea>
+                            </div>
+
+
+                            <!-- Phần đánh giá sao -->
+                            <div class="form-group rating">
+
+                                <label>
+                                    <input type="radio" name="rating" value="1" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5" />
+                                    ★
+                                </label>
+                            </div>
+
+                            <!-- Nút đăng bình luận -->
+                            <button type="button" class="btn btn-primary" onclick="addComment()">Đăng bình luận</button>
+                        </div>
+                    </div>
+
+                </div>
+                 <!-- SIDEBAR -->
+                <div class="sidebar" id="sidebar" style="
+                position: sticky;
+                    top: 4rem;
+                overflow: visible;
+                position: -webkit-sticky !important;
+            ">
+                    <div class="sidebar-itiems">
+                        <div class="search-banner">
+                            <div id="searchForm">
+                                <h2>Địa điểm </h2>
+                                <input autocomplete="off" type="text" id="searchInput" placeholder="Nhập địa điểm muốn đến..."> 
+                            </div>
+                        <script src="search.js"></script>
+                    </div>
+                    </div>
+                    <div class="sidebar-itiems">
+                        <h2>Cảnh đẹp</h2>
+                        <div class="ins-img">
+                            <img src="https://i.pinimg.com/564x/dd/65/31/dd653173bd7f62513e387bd8d57538cf.jpg"
+                                alt="Image 1" class="ins">
+                            <img src="https://i.pinimg.com/564x/ba/af/52/baaf528d78ee12f00c016f423d84f53e.jpg"
+                                alt="Image 2" class="ins">
+                            <img src="https://i.pinimg.com/564x/04/d6/73/04d6732080fd6b488f098e5e6f7700eb.jpg"
+                                alt="Image 3" class="ins">
+                            <img src="https://i.pinimg.com/564x/a2/6e/74/a26e7406836c9323f97ee83d4384e3f4.jpg"
+                                alt="Image 4" class="ins">
+                            <img src="https://i.pinimg.com/564x/c2/38/65/c23865862035f9f6ad78788b517a2ec6.jpg"
+                                alt="Image 5" class="ins">
+                            <img src="https://i.pinimg.com/564x/a8/71/14/a87114c00d829b1b3300313295219396.jpg"
+                                alt="Image 6" class="ins">
+                            <!-- Thêm ảnh Instagram khác nếu cần -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+                <!-- SLIDE ANH DUOI -->
+                <div class="custom-block">
+                    <h1>ĐỊA ĐIỂM KHÁC</h1>
+                </div>
+                  
+                <div class="image-container">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                          <!-- Các Slide -->
+                          <div class="swiper-slide">
+                            <div class="image-wrapper">
+                              <img src="https://i.pinimg.com/564x/28/8a/e9/288ae9cede216827ff866a8455e739d2.jpg" alt="Image 1" class="image">
+                              <div class="overlay">
+                                <h3>Thác Pongour</h3>
+                                <p>Thôn Tân Nghĩa, Ninh Gia, Đức Trọng, Lâm Đồng</p>
+                                <div class="dg">
+                                    <div class="stars1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>   
+                                    </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image-wrapper">
+                              <img src="https://reviewvilla.vn/wp-content/uploads/2022/05/Ho-Vo-Cuc-Da-Lat-8.jpg" alt="Image 2" class="image">
+                              <div class="overlay">
+                                <h3>Hồ Vô Cực</h3>
+                                <p>Khu du lịch Đường Hầm Điêu Khắc, Phường 4, Thành phố Đà Lạt</p>
+                                <div class="dg">
+                                    <div class="stars1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>   
+                                    </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image-wrapper">
+                              <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/472187cXz/diem-den-tuyet-voi-doi-che-cau-dat_15" alt="Image 3" class="image">
+                              <div class="overlay">
+                                <h3>Đồi chè Cầu Đất</h3>
+                                <p>QL20, Xuân Trường, Thành phố Đà Lạt</p>
+                                <div class="dg">
+                                    <div class="stars1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>   
+                                    </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                        
+                          <div class="swiper-slide">
+                            <div class="image-wrapper">
+                              <img src="https://ksdalat.com/wp-content/uploads/2019/12/nha-tho-Domain-De-Marie.jpg" alt="Image 3" class="image">
+                              <div class="overlay">
+                                <h3>Nhà thờ Domaine De Marie</h3>
+                                <p>Số 1 Ngô Quyền, Phường 6, Thành phố Đà Lạt</p>
+                                <div class="dg">
+                                    <div class="stars1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>   
+                                    </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image-wrapper">
+                              <img src="https://images.pexels.com/photos/2734521/pexels-photo-2734521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3" class="image">
+                              <div class="overlay">
+                                <h3>Đồi chè Cầu Đất</h3>
+                                <p>QL20, Xuân Trường, Thành phố Đà Lạt</p>
+                                <div class="dg">
+                                    <div class="stars1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>   
+                                    </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </div>
+                       
+                      </div>
+                      <!-- Nút điều hướng -->
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                  </div>
+                  </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var mySwiper = new Swiper('.swiper-container', {
+                    slidesPerView: 2, // Số lượng slide hiển thị trên một view
+                    spaceBetween: 10, // Khoảng cách giữa các slide
+                    loop: true, // Tự động quay lại slide đầu khi đi đến slide cuối
+                    autoplay: {
+                      autoplay: 2000,
+                        disableOnInteraction: false, // Không tắt autoplay khi người dùng tương tác
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next', // Selector của nút chuyển slide tiếp theo
+                        prevEl: '.swiper-button-prev', // Selector của nút chuyển slide trước đó
+                    },
+                    breakpoints: {
+            // Các cấu hình cho các kích thước màn hình khác nhau (nếu cần)
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+                });
+            });
+        </script>
+    
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Vi Vu Đà Lạt</h3>
+            <p>Du lịch không chỉ là đi đến một nơi khác, mà là khám phá những điều mới mẻ. Hãy cùng Vi vu Đà Lạt nhé!
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+            <h3>Blogs</h3>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="mùa hoa Đà Lạt.html">Mùa Hoa Đà Lạt</a> <br>
+                    <span class="date"> Thứ 2, 08/4/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Trải nghiệm thú vị</a> <br>
+                    <span class="date">Thứ 5, 07/3/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Câu chuyện tình yêu</a><br>
+                    <span class="date">Thứ 4, 06/02/2024 </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <div class="icon-address"><i class="bi bi-house"></i></div>
+                <p>12 Nguyễn Văn Bảo, Gò Vấp</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-phone"><i class="bi bi-telephone"></i></div>
+                <p>+1234567890</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-mail"><i class="bi bi-envelope"></i></div>
+                <p>vivudalat@gmail.com</p>
+            </div>
+        </div>
+      
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+         let index = 0;
+         const images = document.querySelectorAll('.banner img');
+         images[index].classList.add('active');
+         
+         setInterval(function() {
+             images[index].classList.toggle('active');
+             index = (index + 1) % images.length;
+             images[index].classList.toggle('active');
+         }, 2000); 
+     });
+     
+         </script>
+    <script src="./comment.js"></script>
+</body>

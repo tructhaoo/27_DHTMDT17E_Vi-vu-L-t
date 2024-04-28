@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOUR THÁC PONGOUR </title>
+    <link rel="stylesheet" href="pongour.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/53/59/11/535911be0a99ba45c1b34c55a2af7041.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- MENU -->
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Về Chúng Tôi</a></li>
+                    <li class="blog-dropdown">
+                        <a href="hi.html">Du Lịch Đà Lạt</a>
+                        <div class="blog-dropdown-content">
+                            <a href="kinh nghiệm.html">Kinh Nghiệm</a>
+                            <a href="blog.html">Blog</a>
+                        </div>
+                    <li class="service-dropdown">
+                        <a href="tour.html">Tour Du Lịch</a>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li>
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<a href="login.html">
+    <svg height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 60.671 60.671" xml:space="preserve">
+<g>
+	<g>
+		<ellipse style="fill:#010002;" cx="30.336" cy="12.097" rx="11.997" ry="12.097"/>
+		<path style="fill:#010002;" d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9
+			C48.354,35.818,42.661,30.079,35.64,30.079z"/>
+	</g>
+</g>
+</svg>
+</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+
+    <!--banner  -->
+
+   
+    <header class="page-header">
+        <h1 class="text-banner">TOUR THÁC PONGOUR </h1>
+      </header>
+    
+    <!--BODY  -->
+    <div class="container">
+        <div class="book-ticket">
+            <div class="images-container">
+
+                <div class="images" >
+                    <img src="https://i.pinimg.com/564x/c4/e4/f0/c4e4f0b86c8ff35a6d170d96a7e5140c.jpg" alt="" id="hinh">
+                    <img src="https://i.pinimg.com/564x/28/8a/e9/288ae9cede216827ff866a8455e739d2.jpg" alt="" id="hinh">
+                    <img src="https://cdn.toponseek.com/sites/6/2022/07/lang-nam-da-lat.jpeg" alt="" id="hinh">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/1e/2e/28/phia-tru-c-pini-coffee.jpg" alt="" id="hinh">
+                </div>  
+
+                <button class="left-button" onclick="prev()"><i class="bi bi-chevron-left"></i></button>
+                <button class="right-button" onclick="next()"><i class="bi bi-chevron-right"></i></button>
+            </div>
+            <div class="info-book">
+                <h1> <i class="bi bi-geo-alt-fill"></i> TOUR THÁC PONGOUR ĐÀ LẠT</h1>
+
+                <script src="stars.js"></script>
+
+                <div class="tour-pongour">
+                    <div class="stars">
+                    </div>
+                </div>
+                <p>Thời gian: 1ngày</p>
+                <div class="price"> Giá: 300.000đ/người <span>500.000đ/người</span></div>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning text-white " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    ĐẶT TOUR
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ĐẶT TOUR</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="bookingForm">
+                                    <!-- Các trường input -->
+                                    <input type="text" id="fname" name="fname" required placeholder="Họ và tên"><br>
+                                    <input type="tel" id="phone" name="phone" required placeholder="Điện thoại"><br>
+                                    <input type="email" id="email" name="email" required placeholder="Email"><br>
+                                    <input type="date" id="start_date" name="start_date" required
+                                        placeholder="Ngày đi"><br>
+                                    <input type="number" id="adults" name="adults" min="1" required
+                                        placeholder="Người lớn"><br>
+                                    <input type="number" id="children" name="children" min="0" value="0" required
+                                        placeholder="Trẻ em(<11 tuổi)"><br>
+                                    <div id="errorMessages" style="color: red;"></div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning" id="bookTourBtn">Đặt Tour</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="booktour.js"></script>
+
+            </div>
+
+        </div>
+
+
+        <!-- THÔNG TIN HÀNH TRÌNH -->
+        <div class="page-container" >
+            <div class="page-content" style=" display: flex; overflow: visible;align-items: flex-start;">
+    
+                <div class="info-tour" >
+                    <h1>THÔNG TIN HÀNH TRÌNH</h1>
+                    <hr>
+                    <div class="content">
+                      <p> <strong> Chương trình tour thác Pongour </strong> sẽ mang du khách đến với những điểm đến thú vị và mới mẽ trên đường đi. Với những điểm đến mới lạ như Làng Gà, Trang trại Nấm, Làng hoa Thái Phiên, Trang trại cà phê chồn duy nhất Đà Lạt và Nam thiên đệ nhất thác - thác Pongour hứa hẹn sẽ đem đến cho quý khác những kỷ niệm khó quên nhất.</p>
+                        <img src="https://i.pinimg.com/564x/3b/99/d2/3b99d265f8af045b69a366836a7b3385.jpg" alt="">    
+                      </div>
+                    <!-- LỊCH TRÌNH -->
+            <h1>LỊCH TRÌNH</h1>
+            <hr>
+            <div class="content">
+                <h4>1. Làng Gà </h4>
+                <p>Buối sáng, xe và hướng dẫn viên sẽ đón quý khách tại điểm hẹn bắt đầu chương trình tham quan. Trên đường đến thác Pongour quý khách sẽ đường dừng chân tại một làng đồng bào thiểu số nối tiếng ở phía nam Đà Lạt và cái tên nghe cũng rất lạ đó là Làng Gà, tại đây quý khách sẽ được tìm hiểu về văn hóa bản địa, tham quan dệt thổ cẩm, xem vườn cà phê, vườn rau...</p>
+                <img src="https://danviet.mediacdn.vn/Files/Image/chienthang/2019/06/02/thumb_660_6ac00c2a-957f-43a2-947a-8d76a82934a7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h4>2. Thác Pongour</h4>
+                <p>Tiếp tục chương trình quý khách sẽ đến với thác Pongour còn được mệnh danh là nam thiên đệ nhất thác, đây là ngọn thác lớn nhất miền nam Việt Nam. Ngọn thác đổ xuống từ độ cao hơn 40m và trải dài trên 100m nhìn như một dãi lụa phủ trắng xóa cả một vách núi. Nếu quý khách đi tour vào cuối tháng 10 đến tháng 2 dương lịch sẽ có cơ hội chiêm ngưỡng một trong những con đường hoa Dã Quỳ đẹp nhất Đà Lạt, hai bên đường vào thác Pongour mùa này hoa Quỳ nỡ khắp các lỗi đi và cả những ngọn đồi hai bên.</p>
+                <img src="https://i.pinimg.com/564x/3b/99/d2/3b99d265f8af045b69a366836a7b3385.jpg" alt="">
+            </div>
+            <div class="content">
+                <h4>3. Trang trại Nấm</h4>
+                <p>Trên đường quay trở về Đà Lạt, quý khách sẽ dừng chân tham quan trang trại trồng nấm, tại đây quý khách sẽ được tìm hiểu về quy trình cách trồng và chăm sóc nấm.</p>
+                <img src="https://cdn3.ivivu.com/2022/10/langnam1.jpg" alt="">
+                <img src="https://dulichvietnam.com.vn/kinh-nghiem/wp-content/uploads/2022/11/lang-nam-da-lat-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h4>4. Làng hoa Thái Phiên</h4>
+                <p>Buổi trưa quý khách sẽ dừng ăn trưa tại nhà hàng địa phương ( Chi phí tự túc).
+                    Ăn trưa xong chương trình sẽ tiếp tục đưa quý khách đến với một trong ba làng hoa nổi tiếng nhất Đà Lạt đó là làng hoa Thái Phiên. Tại đây quý khách sẽ được vào tận nhà kính để xem quy trình trồng và thu hoạch hoa, được hòa mình với không khí nhà nông của người địa phương ở đây.</p>
+                <img src="https://dulichmedia.dalat.vn//Images/LDG/Import/1508405134322-tp3_636591447995396805.jpg" alt="">
+                <img src="https://digiticket.vn/blog/wp-content/uploads/2022/08/lang-hoa-thai-phien-8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h4>5. Cà phê Chồn</h4>
+                <p>Điểm cuối của chương trình tham quan, quý khách sẽ đến tham quan trại cà phê Chồn nỗi tiếng ở Đà Lạt, trang trại nuôi hơn 250 con chồn chuyên cho ăn cà phê Arabica để cho ra những sản phẩm cà phê chồn chất lượng nhất. Tại đây quý khách sẽ được tham quan trang trại, được thưởng thức những lý cà phê chồn chính hiệu được pha chế rất công phu.</p>
+                <img src="https://dulichdalatbinhdan.net/wp-content/uploads/2018/08/tham-quan-trang-trai-ca-phe-chon-da-lat-01.jpg" alt="">
+                <img src="https://zoomtravel.vn/upload/images/cafe-chon-2.jpg" alt="">
+                <p>Kết thúc chương trình, xe và hướng dẫn sẽ đưa quý khách trở về khách sạn và hẹn gặp lại!</p>
+            </div>
+            <!-- GIÁ VÉ -->
+            <h1> GIÁ VÉ</h1>
+            <hr>
+            <div class="content">
+            <h4>Giá tour ghép đoàn: 300.00đ/1 Khách</h4>
+            <h4>Giá tour bao gồm:</h4>
+                <p>- Xe đời mới <br>
+                    - Vé tham quan <br>
+                    - Hướng dẫn viên nhiều kinh nghiệm, nước uống.</p>
+            <h4>Giá tour không bao gồm:</h4>
+               <p>- Ăn trưa <br>
+                - Vé xe jeep <br>
+                - Các chi phí cá nhân khác.</p>
+
+            <h4>Giá tour cho trẻ em</h4>
+            <p>-Trẻ em cao dưới 1m (2 người lớn đi cùng 1 trẻ em)  Miễn phí <br>
+                -Trẻ em cao từ 1m đến 1m2  Phí tour 50% giá người lớn <br>
+                -Trẻ em cao trên 1m2  Phí tour như người lớn</p>
+            </div>
+                    <!-- HIỆN ĐÁNH GIÁ Ở ĐÂY -->
+                    <div>
+                        <h1>BÌNH LUẬN</h1>
+                        <hr>
+                    </div>
+                    <div class="result" id="result"></div>
+
+                    <h1>GỬI ĐÁNH GIÁ</h1>
+                    <hr>
+
+                    <div class="form">
+                        <div class="comment-form">
+                            <input type="text" value="pongour" id="tour_name" hidden>
+                            <!-- Khung nhập bình luận -->
+                            <div class="form-group">
+                                <textarea id="description" placeholder="Viết bình luận của bạn"></textarea>
+                            </div>
+
+
+                            <!-- Phần đánh giá sao -->
+                            <div class="form-group rating">
+
+                                <label>
+                                    <input type="radio" name="rating" value="1" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5" />
+                                    ★
+                                </label>
+                            </div>
+
+                            <!-- Nút đăng bình luận -->
+                            <button type="button" class="btn btn-primary" onclick="addComment()">Đăng bình luận</button>
+                        </div>
+                    </div>
+                </div>
+                    <!-- SIDEBAR -->
+              
+                <div class="sidebar" id="sidebar" >
+                    <div class="sidebar-itiems">
+                        <div class="search-banner">
+                            <div id="searchForm">
+                                <h2>Địa điểm </h2>
+                                <input autocomplete="off" type="text" id="searchInput" placeholder="Nhập địa điểm muốn đến..."> 
+                            </div>
+                        <script src="search.js"></script>
+                    </div>
+                    <div class="sidebar-itiems">
+                        <h2>Cảnh đẹp</h2>
+                        <div class="ins-img">
+                            <img src="https://i.pinimg.com/564x/dd/65/31/dd653173bd7f62513e387bd8d57538cf.jpg"
+                                alt="Image 1" class="ins">
+                            <img src="https://i.pinimg.com/564x/ba/af/52/baaf528d78ee12f00c016f423d84f53e.jpg"
+                                alt="Image 2" class="ins">
+                            <img src="https://i.pinimg.com/564x/04/d6/73/04d6732080fd6b488f098e5e6f7700eb.jpg"
+                                alt="Image 3" class="ins">
+                            <img src="https://i.pinimg.com/564x/a2/6e/74/a26e7406836c9323f97ee83d4384e3f4.jpg"
+                                alt="Image 4" class="ins">
+                            <img src="https://i.pinimg.com/564x/c2/38/65/c23865862035f9f6ad78788b517a2ec6.jpg"
+                                alt="Image 5" class="ins">
+                            <img src="https://i.pinimg.com/564x/a8/71/14/a87114c00d829b1b3300313295219396.jpg"
+                                alt="Image 6" class="ins">
+                            <!-- Thêm ảnh Instagram khác nếu cần -->
+                        </div>
+                    </div>
+                    <div class="sidebar-itiems">
+                      <h2>Các Tour Phổ Biến</h2>
+                      <div class="popular-post">
+                        <a href="sup.html">
+                        <img src="https://i.pinimg.com/564x/3a/0d/18/3a0d18475e553fcea90b946b8b20ed9b.jpg" alt="">
+                        <h4>TOUR CHÈO SUP TẠI HỒ TUYỀN LÂM</h4></a>
+                        <a href="congchieng.html">
+                        <img src="https://i.pinimg.com/564x/3f/b1/c9/3fb1c97ba8448b29bcd6a65fadf6aab0.jpg" alt="">
+                        <h4> TOUR GIAO LƯU CỒNG CHIÊNG</h4></a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Vi Vu Đà Lạt</h3>
+            <p>Du lịch không chỉ là đi đến một nơi khác, mà là khám phá những điều mới mẻ. Hãy cùng Vi vu Đà Lạt nhé!
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+            <h3>Blogs</h3>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="mùa hoa Đà Lạt.html">Mùa Hoa Đà Lạt</a> <br>
+                    <span class="date"> Thứ 2, 08/4/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Trải nghiệm thú vị</a> <br>
+                    <span class="date">Thứ 5, 07/3/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Câu chuyện tình yêu</a><br>
+                    <span class="date">Thứ 4, 06/02/2024 </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <div class="icon-address"><i class="bi bi-house"></i></div>
+                <p>12 Nguyễn Văn Bảo, Gò Vấp</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-phone"><i class="bi bi-telephone"></i></div>
+                <p>+1234567890</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-mail"><i class="bi bi-envelope"></i></div>
+                <p>vivudalat@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./comment.js"></script>
+    <script>
+         // BANNER
+    var arr_hinh=[
+    "https://i.pinimg.com/564x/c4/e4/f0/c4e4f0b86c8ff35a6d170d96a7e5140c.jpg",
+    "https://i.pinimg.com/564x/28/8a/e9/288ae9cede216827ff866a8455e739d2.jpg",
+    "https://cdn.toponseek.com/sites/6/2022/07/lang-nam-da-lat.jpeg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/1b/1e/2e/28/phia-tru-c-pini-coffee.jpg"
+];
+var index=0;
+function prev() {
+    index--;
+    if(index<-0) index=arr_hinh.length-1;
+    document.getElementById("hinh").src=arr_hinh[index];
+}
+
+function next() {
+    index++;
+    if(index==arr_hinh.length) index=0;
+    document.getElementById("hinh").src=arr_hinh[index];
+}
+    </script>
+</body>

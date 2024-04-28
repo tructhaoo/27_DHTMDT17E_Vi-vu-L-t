@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TOUR GIAO LƯU CỒNG CHIÊNG ĐÀ LẠT</title>
+    <link rel="stylesheet" href="congchieng.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/53/59/11/535911be0a99ba45c1b34c55a2af7041.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- MENU -->
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Về Chúng Tôi</a></li>
+                    <li class="blog-dropdown">
+                        <a href="hi.html">Du Lịch Đà Lạt</a>
+                        <div class="blog-dropdown-content">
+                            <a href="kinh nghiệm.html">Kinh Nghiệm</a>
+                            <a href="blog.html">Blog</a>
+                        </div>
+                    <li class="service-dropdown">
+                        <a href="tour.html">Tour Du Lịch</a>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li>
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<a href="login.html">
+    <svg height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 60.671 60.671" xml:space="preserve">
+<g>
+	<g>
+		<ellipse style="fill:#010002;" cx="30.336" cy="12.097" rx="11.997" ry="12.097"/>
+		<path style="fill:#010002;" d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9
+			C48.354,35.818,42.661,30.079,35.64,30.079z"/>
+	</g>
+</g>
+</svg>
+</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+
+    <!--banner  -->
+
+   
+    <header class="page-header">
+        <h1 class="text-banner"> TOUR GIAO LƯU CỒNG CHIÊNG ĐÀ LẠT</h1>
+      </header>
+    
+    <!--BODY  -->
+    <div class="container">
+        <div class="book-ticket">
+            <div class="images-container">
+
+                <div class="images" >
+                    <img src="https://thuthachviet.com/images/news/bab0bf89192079058cd24e71cc7326c0.png" alt="" id="hinh">
+                    <img src="https://mytourcdn.com/upload_images/Image/news_picture/20130423/cong%20chieng%20tay%20nguyen/mzf1366705894.jpg" alt="" id="hinh">
+                    <img src="https://hoanhap.vn/uploads/photos/7/202001/5fd1d19514103.jpg" alt="" id="hinh">
+                    <img src="https://images.vietnamtourism.gov.vn/vn/images/2023/thang12/521-kon_tum-phuocsonkt%40gmailcom-le_hoi_mung_lua_moi_sapo.jpg" alt="" id="hinh">
+                </div>
+
+                <button class="left-button" onclick="prev()"><i class="bi bi-chevron-left"></i></button>
+                <button class="right-button" onclick="next()"><i class="bi bi-chevron-right"></i></button>
+            </div>
+            <div class="info-book">
+                <h1> <i class="bi bi-geo-alt-fill"></i>  TOUR GIAO LƯU CỒNG CHIÊNG ĐÀ LẠT</h1>
+
+                <script src="stars.js"></script>
+
+                <div class="tour-congchieng">
+                    <div class="stars">
+                    </div>
+                </div>
+                <p>Thời gian: 18:00 - 20:30</p>
+                <div class="price"> Giá: 200.000đ/người <span>400.000đ/người</span></div>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning text-white " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    ĐẶT TOUR
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ĐẶT TOUR</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="bookingForm">
+                                    <!-- Các trường input -->
+                                    <input type="text" id="fname" name="fname" required placeholder="Họ và tên"><br>
+                                    <input type="tel" id="phone" name="phone" required placeholder="Điện thoại"><br>
+                                    <input type="email" id="email" name="email" required placeholder="Email"><br>
+                                    <input type="date" id="start_date" name="start_date" required
+                                        placeholder="Ngày đi"><br>
+                                    <input type="number" id="adults" name="adults" min="1" required
+                                        placeholder="Người lớn"><br>
+                                    <input type="number" id="children" name="children" min="0" value="0" required
+                                        placeholder="Trẻ em(<11 tuổi)"><br>
+                                    <div id="errorMessages" style="color: red;"></div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning" id="bookTourBtn">Đặt Tour</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="booktour.js"></script>
+
+            </div>
+
+        </div>
+
+
+        <!-- THÔNG TIN HÀNH TRÌNH -->
+        <div class="page-container" >
+            <div class="page-content" style=" display: flex; overflow: visible;align-items: flex-start;">
+    
+                <div class="info-tour" >
+                    <h1>THÔNG TIN HÀNH TRÌNH</h1>
+                    <hr>
+                    <div class="content">
+                        <p> <strong>Tour cồng chiêng Đà Lạt</strong> được tổ chức mỗi đêm, nhằm mục đích phục vụ cho du khách gần xa mỗi khi du lịch Đà Lạt và muốn tìm hiểu về văn hóa bản địa của người đồng bào K'Ho bản địa nơi đây.</p>
+                        <p>Khi mặt trời vừa khuất núi cũng là lúc du khác khởi hành từ Đà Lạt đến với bản làng xã Lát dưới chân núi Langbiang huyền thoại, ở đây du khách sẽ được hòa mình với chương trình giao lưu cồng chiêng Đà Lạt, được thưởng thức rượu cần, thịt nướng, được giao lưu nhảy múa cùng những người đồng bào thiểu số ở đây, bên tiếng cồng, tiếng chiêng, bên ánh lửa bập bùng của núi rừng tây nguyên hùng vĩ...</p>
+                        <img src="https://dalattrongtoi.com/media/upload/images/du-lich-da-lat/tour%20cong%20chieng%202.jpg" alt="">;
+                        <p>Văn hóa <strong> Cồng chiêng Tây Nguyên</strong> của Việt Nam đã được UNESCO chính thức công nhận là kiệt tác văn hóa phi vật thể và truyền khẩu của nhân loại. Sau Nhã nhạc Cung đình Huế, Cồng chiêng Tây Nguyên là di sản văn hóa phi vật thể thứ hai của Việt Nam được tôn vinh là di sản của thế giới. Không gian văn hóa cồng chiêng Tây Nguyên trải rộng suốt 5 tỉnh Kon Tum, Gia Lai, Đăk Lăk, Đăk Nông, Lâm Đồng và chủ nhân của loại hình văn hóa đặc sắc này là cư dân các dân tộc Tây Nguyên: Bana, Xêđăng, Mnông, Cơho, Rơmăm, Êđê, Giarai, Mạ… Cồng chiêng gắn bó mật thiết với cuộc sống của người Tây Nguyên, là tiếng nói của tâm linh, tâm hồn con người, để diễn tả niềm vui, nỗi buồn trong cuộc sống, trong lao động và sinh hoạt hằng ngày của họ.</p>
+                        <img src="https://i.pinimg.com/564x/8e/c4/70/8ec470a2b161d263cdcfbe08fa5090f5.jpg" alt="">;
+                        <p>Trước khi đến với đêm hội tour cồng chiêng Đà Lạt, quý khách sẽ được tham quan làng Đồng bào người K’ho sinh sống dưới chân núi Langbiang, tham quan nhà dài và các nhạc cụ truyền thống của người Lạch, người Chil… Sau khi tham quan quý khách sẽ tham dự buổi biểu diễn Cồng Chiêng; với chương trình này, quý khách sẽ có cơ hội tìm hiểu và tham gia những nghi lễ, tập tục truyền thống của người dân bản địa trên vùng đất cao nguyên Lâm Viên này. Cùng hòa mình trong lễ hội đâm trâu, lễ hội mừng lúa mới. Dưới làn gió mát, trăng thanh, du khách sẽ cùng những chàng trai cô gái dân tộc Lạch nhảy múa quanh bếp lửa hồng bập bùng trong giai điệu cồng chiêng vang lừng, cùng nhâm nhi những ché rượu cần và thưởng thức món thịt rừng nóng hổi.</p>
+                        <p>Sau khi kết thúc chương trình giao lưu cồng chiêng,, xe và hướng dẫn viên sẽ đón quý khách trở về khách sạn và kết thúc chương trình.</p>
+                    </div>
+
+                    <!-- LỊCH TRÌNH -->
+                    <h1>LỊCH TRÌNH</h1>
+                    <hr>
+                    <div class="content">
+                        <li>Tham quan làng dân tộc Lạch</li>
+                        <li>Tham quan nhà sàn truyền thống</li>
+                        <li>Tham gia giao lưu văn hóa cồng chiêng Tây Nguyên</li>
+                        <li>Thưởng thức rượu cần, thịt nướng.</li>
+                        <li> Giao lưu nhảy múa cùng đồng bào K'Ho</li>
+                        <li>Kết thúc chương trình</li>
+                    </div>
+                    <!-- GIÁ VÉ -->
+                    <h1> GIÁ VÉ</h1>
+                    <hr>
+                    <div class="content">
+                        <h4>Giá tour ghép đoàn: 200.000đ/người</h4>
+                        <h4>*Bao gồm:</h4>
+                        <li>Xe đưa đón tại khách sạn.</li>
+                        <li>Hướng dẫn viên.</li>
+                        <li>Vé tham gia cồng chiêng.</li>
+                        <li>Rượu cần, thịt nướng.</li>
+
+                        <h4>*Không bao gồm: </h4>
+                        <li>Các chi phí cá nhân khác.</li>
+
+                        <h4>Giá tour cho trẻ em</h4>
+                        <li>Trẻ em dưới 1m được tình 50% giá vé nếu đi kèm với 2 người lớn.</li>
+                        <li>Trẻ em cao hơn 1m được tính bằng một người lớn.</li>
+                    </div>
+                    <!-- HIỆN ĐÁNH GIÁ Ở ĐÂY -->
+                    <div>
+                        <h1>BÌNH LUẬN</h1>
+                        <hr>
+                    </div>
+                    <div class="result" id="result"></div>
+
+                    <h1>GỬI ĐÁNH GIÁ</h1>
+                    <hr>
+
+                    <div class="form">
+                        <div class="comment-form">
+                            <input type="text" value="congchieng" id="tour_name" hidden>
+                            <!-- Khung nhập bình luận -->
+                            <div class="form-group">
+                                <textarea id="description" placeholder="Viết bình luận của bạn"></textarea>
+                            </div>
+
+
+                            <!-- Phần đánh giá sao -->
+                            <div class="form-group rating">
+
+                                <label>
+                                    <input type="radio" name="rating" value="1" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5" />
+                                    ★
+                                </label>
+                            </div>
+
+                            <!-- Nút đăng bình luận -->
+                            <button type="button" class="btn btn-primary" onclick="addComment()">Đăng bình luận</button>
+                        </div>
+                    </div>
+                </div>
+                    <!-- SIDEBAR -->
+              
+                <div class="sidebar" id="sidebar" >
+                    <div class="sidebar-itiems">
+                        <div class="search-banner">
+                            <div id="searchForm">
+                                <h2>Địa điểm </h2>
+                                <input autocomplete="off" type="text" id="searchInput" placeholder="Nhập địa điểm muốn đến..."> 
+                            </div>
+                        <script src="search.js"></script>
+                    </div>
+                    <div class="sidebar-itiems">
+                        <h2>Cảnh đẹp</h2>
+                        <div class="ins-img">
+                            <img src="https://i.pinimg.com/564x/dd/65/31/dd653173bd7f62513e387bd8d57538cf.jpg"
+                                alt="Image 1" class="ins">
+                            <img src="https://i.pinimg.com/564x/ba/af/52/baaf528d78ee12f00c016f423d84f53e.jpg"
+                                alt="Image 2" class="ins">
+                            <img src="https://i.pinimg.com/564x/04/d6/73/04d6732080fd6b488f098e5e6f7700eb.jpg"
+                                alt="Image 3" class="ins">
+                            <img src="https://i.pinimg.com/564x/a2/6e/74/a26e7406836c9323f97ee83d4384e3f4.jpg"
+                                alt="Image 4" class="ins">
+                            <img src="https://i.pinimg.com/564x/c2/38/65/c23865862035f9f6ad78788b517a2ec6.jpg"
+                                alt="Image 5" class="ins">
+                            <img src="https://i.pinimg.com/564x/a8/71/14/a87114c00d829b1b3300313295219396.jpg"
+                                alt="Image 6" class="ins">
+                            <!-- Thêm ảnh Instagram khác nếu cần -->
+                        </div>
+                    </div>
+                    <div class="sidebar-itiems">
+                        <h2>Các Tour Phổ Biến</h2>
+                        <div class="popular-post">
+                            <a href="sup.html">
+                                <img src="https://i.pinimg.com/564x/3a/0d/18/3a0d18475e553fcea90b946b8b20ed9b.jpg"
+                                    alt="">
+                                <h4>TOUR CHÈO SUP TẠI HỒ TUYỀN LÂM</h4>
+                            </a>
+                            <a href="pongour.html">
+                                <img src="https://i.pinimg.com/474x/02/85/6f/02856f054420d464297947120b5bc4c2.jpg"
+                                    alt="">
+                                <h4> TOUR THÁC PONGOUR ĐÀ LẠT</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Vi Vu Đà Lạt</h3>
+            <p>Du lịch không chỉ là đi đến một nơi khác, mà là khám phá những điều mới mẻ. Hãy cùng Vi vu Đà Lạt nhé!
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+            <h3>Blogs</h3>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="mùa hoa Đà Lạt.html">Mùa Hoa Đà Lạt</a> <br>
+                    <span class="date"> Thứ 2, 08/4/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Trải nghiệm thú vị</a> <br>
+                    <span class="date">Thứ 5, 07/3/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Câu chuyện tình yêu</a><br>
+                    <span class="date">Thứ 4, 06/02/2024 </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <div class="icon-address"><i class="bi bi-house"></i></div>
+                <p>12 Nguyễn Văn Bảo, Gò Vấp</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-phone"><i class="bi bi-telephone"></i></div>
+                <p>+1234567890</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-mail"><i class="bi bi-envelope"></i></div>
+                <p>vivudalat@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./comment.js"></script>
+    <script>
+         // BANNER
+         var arr_hinh=[
+    "https://thuthachviet.com/images/news/bab0bf89192079058cd24e71cc7326c0.png",
+    "https://mytourcdn.com/upload_images/Image/news_picture/20130423/cong%20chieng%20tay%20nguyen/mzf1366705894.jpg",
+    "https://hoanhap.vn/uploads/photos/7/202001/5fd1d19514103.jpg",
+    "https://images.vietnamtourism.gov.vn/vn/images/2023/thang12/521-kon_tum-phuocsonkt%40gmailcom-le_hoi_mung_lua_moi_sapo.jpg"
+   
+];
+var index=0;
+function prev() {
+    index--;
+    if(index<-0) index=arr_hinh.length-1;
+    document.getElementById("hinh").src=arr_hinh[index];
+}
+
+function next() {
+    index++;
+    if(index==arr_hinh.length) index=0;
+    document.getElementById("hinh").src=arr_hinh[index];
+}
+    </script>
+</body>

@@ -1,0 +1,348 @@
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 1300px;
+    height:auto;
+    margin: -50px auto;
+    position: relative;
+    flex:1;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+} 
+/* menu */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 0 20px;
+    z-index: 1000;
+  }
+  .menu {
+    background-color: #FDF5E6;
+    overflow: hidden;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    font-size:25px;
+    padding: 0;
+  }
+  
+  .menu li {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    float: left;
+    padding: 15px 30px;
+    margin: 0 10px;
+  }
+  
+  .menu li:hover {
+    background-color: 0;
+  }
+  
+  .menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    color: #D3D3D3;
+  }
+  
+  #toggle {
+    display: none;
+    background: 0;
+    color: #000000;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }   
+  /*Thêm CSS của blog  */
+  .menu .blog-dropdown:hover .blog-dropdown-content {
+    display: block;
+  }
+  .blog-dropdown-content {
+    display: none; /* Ẩn các phần tử con mặc định */
+    position: absolute;
+    background-color: #aba9a3;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 5;
+  }
+  
+  .blog-dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+  }
+  .blog-dropdown-content a:hover {
+    background-color: #ddd;
+    color:#000000;
+  }
+    /*Thêm CSS của Service  */
+  .menu .service-dropdown:hover .service-dropdown-content {
+    display: block;
+  }
+  .service-dropdown-content {
+    display: none; /* Ẩn các phần tử con mặc định */
+    position: absolute;
+    background-color: #aba9a3;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+  .service-dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+  }
+  .service-dropdown-content a:hover {
+    background-color: #ddd;
+    color:#000000;
+  }
+  #toggle {
+      display: none;
+      background: 0;
+      color: #000000;
+      text-align: right;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+  }
+   
+  @media screen and (max-width: 768px) {
+      #main-menu {
+          flex-direction: column;
+          text-align: center;
+      }
+      #toggle {
+          display: block;
+      }
+      nav {
+          display: none;
+      }
+  }
+  
+/* Banner */
+.page-header {
+  position: relative;
+  background: url(https://haycafe.vn/wp-content/uploads/2022/03/anh-da-lat.jpg) no-repeat center top fixed;
+  background-size: cover;
+  height: 550px;
+}
+
+.page-header h1 {
+    position: absolute; /* Đặt vị trí là absolute để căn chỉnh theo phần tử cha */
+    top: 45%; /* Đặt vị trí ở giữa theo chiều dọc */
+    left: 50%; /* Đặt vị trí ở giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Di chuyển phần tử đi 50% chiều ngang và 50% chiều dọc để căn giữa hoàn toàn */
+    color: rgb(255, 255, 255); /* Màu chữ */
+    font-size: 50px; /* Kích thước chữ */
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace
+}
+
+
+/* Form liên hệ bên phải */
+.form-contact-column{
+    width:40%;
+    float:right; 
+    background-image: url(https://i.pinimg.com/564x/48/a0/00/48a000fe031c9c4335b0c0df60e92da5.jpg);
+    height:750px;
+    z-index: 5; /* Đặt z-index thấp hơn để không che phủ footer */
+    overflow: auto;
+    position: relative;
+    margin-bottom: 90px;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+.form-contact-column h1{
+    font-size: 50px;
+    color:rgb(163, 163, 163);
+    text-align: center;
+}
+.form-contact{
+    text-align: center;
+}
+.input-group input ::placeholder,
+.input-group textarea::placeholder{
+    font-size:20px;
+}
+
+.input-group input,
+.input-group select{
+    margin:5px 10px 20px 0;
+    width: 350px;
+    height:40px;
+    padding: 12px;
+    color:#706e6e;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+   
+}
+.input-group textarea {
+    width: 355px;
+    height: 150px;
+    padding: 10px;
+    margin-top:10px;
+    font-size:17px;
+    border-radius: 5px;
+    border: none;
+    margin-left:-10px;
+}
+
+.input-group ::placeholder{
+    color:rgb(122, 122, 122);
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+.send {
+    background-color: #d0ba73;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top:50px;
+}
+.send:hover{
+    background-color: #b9ad70;
+}
+/* Nội dung bên trái */
+.content-contact-column{
+    margin-top:90px;
+}
+.content-contact-column h1{
+    font-size:50px;
+}
+.content-contact-column p{
+    color:#545353;
+    font-size:20px;
+
+}
+.content-contact-column .icons a{
+    font-size: 40px;
+    color:#0f0f0f;
+}
+.input-contact p {
+    color:#000000;
+    font-size:22px;
+    padding:10px;
+}
+.input-contact i{
+    color:#0e0e0e;
+}
+.icons {
+    display: flex;
+    margin-bottom: 20px;
+}
+.icons a {
+    margin-right: 30px; 
+}
+.icons a i {
+    color: #007bff;
+    font-size:25px;
+}
+.icons a:hover i {
+    color: #ff4500; 
+}
+
+/*css footer*/
+.footer {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  position: relative;
+  display:inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #FDF5E6;
+  color: rgb(32, 32, 32);
+  z-index: 1;
+
+}
+.footer-column {
+  flex: 1;
+  padding: 0 20px;
+  margin-left:100px;
+  position: relative;
+  width:33%;
+}
+
+.footer-column h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.footer-column p {
+  font-size: 20px;
+  padding-right:0px;
+}
+.social-icons a {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-size: cover;
+  color: #0f0f0f;
+}
+
+.news-item {
+  display: flex;
+  margin-bottom: 10px;
+  
+}
+.news-item button{
+  border:none;
+  color:none;
+}
+
+.news-content {
+  flex: 1;
+}
+.news-content a{
+  font-size:22px;
+  text-decoration-line: none;
+  color:#0b0b0b
+}
+.news-content a:hover{
+  color:#eb9328;
+}
+.date {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.contact-info {
+  margin-top:10px;
+  display:flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size:22px;
+  line-height: 1.3; 
+}
+
+.contact-info p {
+  margin-left: 10px;
+  margin-top:0 ;
+}
+
+.icon-address,
+.icon-phone,
+.icon-mail {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top:-30px;
+}
+/* Định dạng cho phần bản quyền */
+.footer .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}

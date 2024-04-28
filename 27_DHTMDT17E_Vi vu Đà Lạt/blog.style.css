@@ -1,0 +1,495 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin     : 0;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size  : 15px;
+}
+
+/* menu */
+#header {
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  width           : 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding         : 0 0 20px;
+  z-index         : 1000;
+}
+
+.menu {
+  background-color: #FDF5E6;
+  overflow        : hidden;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin         : 0;
+  padding-left   : 100px;
+  display        : flex;
+  justify-content: center;
+  font-size      : 25px;
+  padding        : 0;
+}
+
+.menu li {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  float      : left;
+  padding    : 15px 30px;
+  margin     : 0 10px;
+}
+
+.menu li:hover {
+  background-color: 0;
+}
+
+.menu a {
+  display        : block;
+  color          : black;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #D3D3D3;
+}
+
+#toggle {
+  display   : none;
+  background: 0;
+  color     : #000000;
+  text-align: right;
+  padding   : 10px;
+  font-size : 20px;
+  cursor    : pointer;
+}
+
+/*Thêm CSS của blog  */
+.menu .blog-dropdown:hover .blog-dropdown-content {
+  display: block;
+}
+
+.blog-dropdown-content {
+  display         : none;
+  /* Ẩn các phần tử con mặc định */
+  position        : absolute;
+  background-color: #aba9a3;
+  box-shadow      : 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index         : 5;
+}
+
+.blog-dropdown-content a {
+  padding        : 12px 16px;
+  display        : block;
+  color          : rgb(250, 250, 250);
+  text-decoration: none;
+}
+
+.blog-dropdown-content a:hover {
+  background-color: #ddd;
+  color           : #000000;
+}
+
+/*Thêm CSS của Service  */
+.menu .service-dropdown:hover .service-dropdown-content {
+  display: block;
+}
+
+.service-dropdown-content {
+  display         : none;
+  /* Ẩn các phần tử con mặc định */
+  position        : absolute;
+  background-color: #aba9a3;
+  box-shadow      : 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index         : 10;
+}
+
+.service-dropdown-content a {
+  padding        : 12px 16px;
+  display        : block;
+  color          : rgb(250, 250, 250);
+  text-decoration: none;
+}
+
+.service-dropdown-content a:hover {
+  background-color: #ddd;
+  color           : #000000;
+}
+
+/*---Body---*/
+h1 {
+  margin: 40px 20px;
+}
+
+h2 {
+  color: #212529;
+
+}
+p{
+  text-align: justify;
+}
+.page-header {
+  position       : relative;
+  background     : url(https://static.vinwonders.com/production/thanh-pho-da-lat-topbanner.jpg) no-repeat center top fixed;
+  background-size: cover;
+  height         : 550px;
+  opacity        : 60%;
+}
+
+.page-header:hover {
+  opacity: 100%;
+}
+
+.page-container {
+  margin-bottom: 50px;
+  text-align   : center;
+}
+
+hr {
+  margin: 10px 0 25px;
+}
+
+hr {
+  box-sizing   : content-box;
+  height       : 0;
+  overflow     : visible;
+  margin-top   : 2rem;
+  margin-bottom: 2rem;
+  border       : 0;
+  border-top   : 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display        : flex;
+  justify-content: space-around;
+  align-items    : center;
+  padding        : 20px;
+  max-width      : 1200px;
+  margin         : auto;
+}
+
+.item {
+  position  : relative;
+  flex-grow : 1;
+  flex-basis: 0;
+  margin    : 0 5px;
+}
+
+.caption {
+  position   : absolute;
+  right      : 0;
+  left       : 0;
+  bottom     : 0;
+  margin     : auto;
+  background : #fff;
+  padding    : 10px;
+  text-align : center;
+  font-weight: 600;
+  opacity    : .5;
+  transition : all 0.2s;
+  color      : #212529;
+  width      : 100%;
+}
+
+.caption:hover {
+  opacity: 1;
+}
+
+.item img {
+  width        : 100%;
+  /* Ảnh sẽ chiếm toàn bộ chiều rộng của .item */
+  height       : auto;
+  /* Tự động điều chỉnh chiều cao để giữ tỷ lệ ảnh */
+  border-radius: 10px;
+  /* Bo tròn góc của ảnh */
+}
+
+.page-content {
+  margin-left    : auto;
+  margin-right   : auto;
+  display        : flex;
+  justify-content: space-between;
+  max-width      : 1200px;
+  margin         : auto;
+
+        height: 2000px;
+        overflow: visible;
+        align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .page-content {
+    flex-wrap: nowrap;
+  }
+}
+
+.container2 {
+  width        : 850px;
+  margin       : auto;
+  margin-bottom: 20px;
+}
+
+.content {
+  width  : 100%;
+  padding: 10px;
+}
+
+.content img {
+  width: 100%;
+}
+
+.content p {
+  text-align: left;
+}
+
+/*Sidebar*/
+.sidebar {
+  text-align    : center;
+  width         : 350px;
+  /* Điều chỉnh chiều rộng của sidebar */
+  padding       : 10px;
+  /* Khoảng cách trong của sidebar */
+  box-sizing    : border-box;
+  /* Đảm bảo rằng padding không làm thay đổi kích thước tổng thể */
+  padding-bottom: 50px;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+  /* Khoảng cách dưới tiêu đề */
+  color        : #333;
+  /* Màu chữ của tiêu đề */
+}
+
+.sidebar img {
+  width        : 70px;
+  /* Chiều rộng của ảnh bằng với chiều rộng của sidebar */
+  height       : auto;
+  /* Chiều cao tự động điều chỉnh theo tỷ lệ của ảnh */
+  margin-left  : 10px;
+  margin-bottom: 10px;
+  /* Khoảng cách dưới ảnh */
+}
+
+.sidebar i {
+  color : #333;
+  margin: 5px;
+}
+
+.sidebar-itiems {
+  margin-bottom: 50px;
+}
+
+.loinhan {
+  position: relative;
+}
+
+.loinhan input {
+  width        : 90%;
+  padding      : 10px 20px;
+  border-radius: 0 40px 40px 0;
+  margin       : auto;
+  border       : 1px solid #ced4da;
+  font-size    : 15px;
+  font-family  : "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.loinhan button {
+  width           : 50px;
+  height          : 50px;
+  border-radius   : 50%;
+  position        : absolute;
+  right           : 0;
+  top             : -25px;
+  border          : 2px solid #fff;
+  background-color: rgb(237, 220, 176);
+}
+
+.loinhan i {
+  font-size: 25px;
+  position : absolute;
+  right    : 8px;
+  bottom   : 7px;
+}
+
+.popular-post {
+  margin-bottom: 40px;
+  /* Khoảng cách dưới mỗi bài viết nổi bật */
+}
+
+.popular-post a {
+  color          : #333;
+  text-decoration: none;
+}
+
+.popular-post h3 {
+  margin-top   : 0px;
+  margin-bottom: 30px;
+}
+
+.popular-post img {
+  width : 100%;
+  /* Chiều rộng của ảnh bằng với chiều rộng của sidebar */
+  height: auto;
+  /* Chiều cao tự động điều chỉnh theo tỷ lệ của ảnh */
+}
+
+.btn {
+  color           : #212529;
+  background-color: rgb(237, 220, 176);
+  border-color    : rgb(237, 225, 194);
+  padding         : 0.5rem 0.85rem;
+  width           : 100%;
+  border          : 1px solid transparent;
+  font-size       : 17px;
+  margin-top      : 20px;
+  font-family     : "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.btn:hover {
+  background-color: rgb(241, 207, 122);
+}
+
+.read-more-button {
+  background-color: #ffffff;
+  color           : rgb(82, 82, 82);
+  padding         : 10px 20px;
+  text-decoration : none;
+  border          : 1px solid #ced4da;
+}
+
+.read-more-button:hover {
+  background-color: #000000;
+  color           : white;
+}
+
+.row {
+  display       : flex;
+  flex-wrap     : wrap;
+  margin        : -10px;
+  padding-bottom: 20px;
+}
+
+.column img {
+  width: 100%;
+}
+
+.column {
+  flex   : 25%;
+  /* Mỗi cột chiếm 25% độ rộng của hàng */
+  padding: 20px;
+}
+
+.column p {
+  margin-bottom: 30px;
+}
+
+/* Đảm bảo rằng cột chuyển thành hàng khi kích thước màn hình nhỏ hơn 600px */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    /* Mỗi cột chiếm 50% độ rộng của hàng */
+  }
+}
+
+/*css footer*/
+.footer {
+  font-family     : "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  position        : relative;
+  display         : inline-flex;
+  flex-wrap       : wrap;
+  justify-content : space-between;
+  align-items     : flex-start;
+  background-color: #FDF5E6;
+  color           : rgb(32, 32, 32);
+  z-index         : 1;
+
+}
+
+.footer-column {
+  flex       : 1;
+  padding    : 0 20px;
+  margin-left: 100px;
+  position   : relative;
+  width      : 33%;
+}
+
+.footer-column h3 {
+  font-size  : 30px;
+  font-weight: bold;
+}
+
+.footer-column p {
+  font-size    : 20px;
+  padding-right: 0px;
+}
+
+.social-icons a {
+  display        : inline-block;
+  width          : 20px;
+  height         : 20px;
+  margin-right   : 10px;
+  background-size: cover;
+  color          : #0f0f0f;
+}
+
+.news-item {
+  display      : flex;
+  margin-bottom: 10px;
+
+}
+
+.news-item button {
+  border: none;
+  color : none;
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content a {
+  font-size           : 22px;
+  text-decoration-line: none;
+  color               : #0b0b0b
+}
+
+.news-content a:hover {
+  color: #eb9328;
+}
+
+.date {
+  font-size: 12px;
+  color    : #ccc;
+}
+
+.contact-info {
+  margin-top   : 10px;
+  display      : flex;
+  align-items  : center;
+  margin-bottom: 10px;
+  font-size    : 22px;
+  line-height  : 1;
+}
+
+.contact-info p {
+  margin-left: 10px;
+  margin-top : 0px;
+}
+
+.icon-address,
+.icon-phone,
+.icon-mail {
+  width       : 20px;
+  height      : 20px;
+  margin-right: 10px;
+  margin-top  : -30px;
+}
+
+/* Định dạng cho phần bản quyền */
+.footer .copyright {
+  width     : 100%;
+  text-align: center;
+  margin-top: 20px;
+}

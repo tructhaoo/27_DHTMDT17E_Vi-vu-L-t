@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- CSS của SwiperJS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- JavaScript của SwiperJS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- MENU -->
+    <div id="wrapper">
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Về Chúng Tôi</a></li>
+                    <li class="blog-dropdown">
+                        <a href="hi.html">Du Lịch Đà Lạt</a>
+                        <div class="blog-dropdown-content">
+                            <a href="kinh nghiệm.html">Kinh Nghiệm</a>
+                            <a href="blog.html">Blog</a>
+                        </div>
+                    <li class="service-dropdown">
+                        <a href="tour.html">Tour Du Lịch</a>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li>
+                        
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<a href="login.html">
+    <svg height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 60.671 60.671" xml:space="preserve">
+<g>
+	<g>
+		<ellipse style="fill:#010002;" cx="30.336" cy="12.097" rx="11.997" ry="12.097"/>
+		<path style="fill:#010002;" d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9
+			C48.354,35.818,42.661,30.079,35.64,30.079z"/>
+	</g>
+</g>
+</svg>
+</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+        <!-- Logo -->
+        <div class="menu-spacer">
+            <div class="logo">
+                <div class='falling-leaves'></div>
+                <div class="circle1"></div>
+                <div class="circle2">Vi vu<br>Da Lat</div>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="slide show"
+                style="background-image: url('https://static.vinwonders.com/production/canh-dep-da-lat-1.jpg');"></div>
+            <div class="slide"
+                style="background-image: url('https://static.vinwonders.com/production/canh-dep-da-lat-2.jpg');"></div>
+            <div class="slide"
+                style="background-image: url('https://static.vinwonders.com/production/canh-dep-da-lat-3.jpg');"></div>
+            <div class="dialog">
+                <div class="dialog-content">
+                    <h1>Khám phá Đà Lạt ngay nhé!</h1>
+                    <p>Du lịch không chỉ là đi đến một nơi khác, mà là khám phá những điều mới mẻ. Hãy đi cùng Vi vu Đà
+                        Lạt nhé!</p>
+                    <div class="search-banner">
+                        <form id="searchForm">
+                            <input autocomplete="off" type="text" id="searchInput"
+                                placeholder="Nhập nơi bạn muốn đến...">
+                            <button type="submit">Khám phá ngay</button>
+                        </form>
+                    <script src="search.js"></script>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tiêu đề -->
+        <div class="khoi-ngang">
+            <div class="blocks-container">
+                <div class="block">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <h3>CHECK-IN</h3>
+                    <p><i>Những địa điểm "hot" tại Đà Lạt.</i></p>
+                </div>
+
+                <div class="block">
+                    <i class="bi bi-journal-bookmark-fill"></i>
+                    <h3>CẨM NANG</h3>
+                    <p><i>Tất tần tật kinh nghiệm du lịch Đà Lạt.</i></p>
+                </div>
+
+                <div class="block">
+                    <i class="bi bi-people"></i>
+                    <h3>TOUR</h3>
+                    <p><i>Trải nghiệm du lịch Đà Lạt với nhiều tour hấp dẫn.</i></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="section section-1">
+            <div class="head">
+                <div class="rectangle1"></div>
+                <div class="rectangle2">Về chúng tôi</div>
+            </div>
+        </div>
+
+        <div class="section section-2">
+            <div class="block1">
+                <div class="row1">
+                    <div class="swiper-container" style="
+            overflow: hidden;
+        ">
+                       <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="https://i0.wp.com/media.techcity.cloud/vietnam.vn/2023/05/anh-dep-da-lat-nang-som_085717263-9.jpg?fit=960%2C640&ssl=1"
+                                alt="Image 1"></div>
+                        <div class="swiper-slide"><img
+                                src="https://media.gody.vn/images/lam-dong/doi-che-cau-dat/1-2017/20170104091915-doi-che-cau-dat-gody%20(5).jpg"
+                                alt="Image 2"></div>
+                        <div class="swiper-slide"><img
+                                src="https://media.truyenhinhdulich.vn//upload/news/3_2020/da_lat_07055805032020.jpg"
+                                alt="Image 3"></div>
+                        <div class="swiper-slide"><img
+                                src="https://picture.vn/wp-content/uploads/2015/12/da-lat.png"
+                                alt="Image 4"></div>
+                        <div class="swiper-slide"><img
+                                src="https://static.vinwonders.com/production/canh-dep-da-lat-thumb.jpg"
+                                alt="Image 5"></div>
+                        <div class="swiper-slide"><img
+                                src="https://statics.vinpearl.com/canh-dep-da-lat-22_1688380440.jpg" 
+                                alt="Image 6">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/10/21/1107548/73556-Vuon-Hoa-Thanh.jpg"
+                                alt="Image 5"></div>
+                        <div class="swiper-slide"><img
+                                src="https://dulichviet.com.vn/images/bandidau/xuan-huong-da-lat.jpg" 
+                                alt="Image 6">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://static.vinwonders.com/production/canh-dep-da-lat-thumb.jpg"
+                                alt="Image 5"></div>
+                        <div class="swiper-slide"><img
+                                src="https://statics.vinpearl.com/canh-dep-da-lat-22_1688380440.jpg" 
+                                alt="Image 6">
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        var mySwiper = new Swiper('.swiper-container', {
+                            // Cấu hình Swiper
+                            speed: 12000,
+                            slidesPerView: 6, // Số lượng slide hiển thị trên một view
+                            spaceBetween: 10, // Khoảng cách giữa các slide
+                            loop: true, // Tự động quay lại slide đầu khi đi đến slide cuối
+                            autoplay: {
+                                delay: 0,
+                                disableOnInteraction: false, // Không tắt autoplay khi người dùng tương tác
+                            },
+                            breakpoints: {
+                                // Các cấu hình cho các kích thước màn hình khác nhau (nếu cần)
+                                768: {
+                                    slidesPerView: 6,
+                                },
+                                1024: {
+                                    slidesPerView: 6,
+                                },
+                            },
+                        });
+                    });
+
+                </script>
+                <style>
+                    .swiper-container {
+                        width: 100%;
+                        height: 400px;
+                        /* Điều chỉnh chiều cao của Swiper */
+                    }
+
+                    .swiper-slide img {
+                        width: 100%;
+                        height: 100%;
+                        /* Điều chỉnh kích thước ảnh */
+                        object-fit: cover;
+                        /* Hiển thị ảnh đầy đủ trong kích thước khung */
+                    }
+                </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="row2">
+                    <div class="column2">
+                        <div class="box1">
+                            <h1>Vi vu Đà Lạt</h1>
+                        </div>
+                    </div>
+                    <div class="column21">
+                        <div class="box2">
+                            <h2 class="text-1">Về chúng tôi</h2>
+                            <p class="text-2">Với đam mê xê dịch, luôn khao khát khám phá những vùng đất mới, trải
+                                nghiệm những nền văn hóa khác nhau và lưu giữ những khoảnh khắc đáng nhớ. Vi vu Đà Lạt
+                                ra đời chính là để chia sẻ niềm đam mê ấy với bạn. Và mong muốn trở thành người bạn đồng
+                                hành của bạn trên mọi hành trình. Chúng mình luôn nỗ lực để mang đến cho bạn những thông
+                                tin du lịch hữu ích, những trải nghiệm du lịch thú vị và kết nối bạn với cộng đồng du
+                                lịch đầy nhiệt huyết.
+                            </p>
+                            <a href="about.html" class="btn-1" target="_blank">CHI TIẾT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Địa điểm du lịch -->
+        <!-- Tiêu đề -->
+        <div class="head1">
+            <div class="rectangle1"></div>
+            <div class="rectangle2">Địa điểm</div>
+        </div>
+
+        <div class="thuvien" style="
+            max-width: 1400px;
+            margin: auto;
+        ">
+            <div class="image-grid">
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="https://cra.tlu.edu.vn/Portals/0/Tuyen%20lam%207.jpg" alt="Image 1" />
+                        <a href="hotuyenlam.html" target="_blank">
+                            <div class="overlay">
+                                <h5>Hồ Tuyền Lâm</h5>
+                                <p>Khu du lịch Quốc gia hồ Tuyền Lâm, Phường 4, Thành phố Đà Lạt</p>
+                                <div class="dg">
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="nhatho.html" target="_blank">
+                            <img src="https://ksdalat.com/wp-content/uploads/2019/12/nha-tho-Domain-De-Marie.jpg"
+                                alt="Image 2">
+                        </a>
+                        <div class="overlay">
+                            <h5>Nhà thờ Domaine De Marie</h5>
+                            <p>Số 1 Ngô Quyền, Phường 6, Thành phố Đà Lạt</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="langbiang.html" target="_blank">
+                            <img src="https://ik.imagekit.io/tvlk/blog/2022/11/khu-du-lich-langbiang-5-1024x608.jpg?tr=dpr-2,w-675"
+                                alt="Image 3">
+                        </a>
+                        <div class="overlay">
+                            <h5>Núi LangBiang</h5>
+                            <p>Thị trấn Lạc Dương, Lạc Dương, Lâm Đồng</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://example.com/image-source" target="_blank">
+                            <img src="https://static.vinwonders.com/production/thac-pongour-top-banner.jpg"
+                                alt="Image 4">
+                        </a>
+                        <div class="overlay">
+                            <h5>Thác Pongour</h5>
+                            <p>Thôn Tân Nghĩa, Ninh Gia, Đức Trọng, Lâm Đồng</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://example.com/image-source" target="_blank">
+                            <img src="https://gcs.tripi.vn/public-tripi/tripi-feed/img/472187cXz/diem-den-tuyet-voi-doi-che-cau-dat_15"
+                                alt="Image 5">
+                        </a>
+                        <div class="overlay">
+                            <h5>Đồi chè Cầu Đất</h5>
+                            <p>QL20, Xuân Trường, Thành phố Đà Lạt</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://example.com/image-source" target="_blank">
+                            <img src="https://reviewvilla.vn/wp-content/uploads/2022/05/Ho-Vo-Cuc-Da-Lat-8.jpg"
+                                alt="Image 6">
+                        </a>
+                        <div class="overlay">
+                            <h5>Hồ Vô Cực</h5>
+                            <p>Khu du lịch Đường Hầm Điêu Khắc, Phường 4, Thành phố Đà Lạt</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ẩm thực -->
+            <!-- Tiêu đề -->
+            <div class="head2">
+                <div class="rectangle1"></div>
+                <div class="rectangle2">Ẩm thực</div>
+            </div>
+            <div class="thuvien">
+                <div class="image-food">
+                    <div class="image-item">
+                        <a href="https://example.com/image-source" target="_blank">
+                            <img src="https://i.pinimg.com/564x/19/b2/9c/19b29c581cf280e7d112819850e9a420.jpg"
+                                alt="Image 1" />
+                        </a>
+                        <a href="suadaunanh.html" target="_blank">
+                            <div class="overlay">
+                                <h5>Sữa đậu nành nóng</h5>
+                                <p>Chợ đêm Đà Lạt - Nguyễn Thị Minh Khai, Phường 1, Tp. Đà Lạt, Lâm Đồng</p>
+                                <div class="dg">
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://example.com/image-source" target="_blank">
+                            <img src="https://i.pinimg.com/564x/ec/29/b7/ec29b75d8710de45463b1e067eb916e4.jpg"
+                                alt="Image 2">
+                        </a>
+                        <div class="overlay">
+                            <h5>Bánh tráng nướng</h5>
+                            <p>Chợ đêm Đà Lạt - Nguyễn Thị Minh Khai, Phường 1, Tp. Đà Lạt, Lâm Đồng</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://example.com/image-source" target="_blank">
+                            <img src="https://livingnomads.com/wp-content/uploads/2016/04/nguyen-lam-thanh-strawberry-garden-dalat-travel-tips-5.jpg"
+                                alt="Image 3">
+                        </a>
+                        <div class="overlay">
+                            <h5>Dâu tây</h5>
+                            <p>Vườn dâu Nguyễn Lâm Thanh - 46 đường Đà Phú, phường 7, Tp. Đà Lạt</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://example.com/image-source" target="_blank">
+                            <img src="https://i.pinimg.com/564x/9a/ec/93/9aec93e2be902e6742d869776ff30ca6.jpg"
+                                alt="Image 4">
+                        </a>
+                        <div class="overlay">
+                            <h5>Mứt sấy khô</h5>
+                            <p>Chợ Đà Lạt - Nguyễn Thị Minh Khai, Phường 1, Tp. Đà Lạt, Lâm Đồng</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://example.com/image-source" target="_blank">
+                            <img src="https://i.pinimg.com/564x/62/35/01/623501031328dec027e82e933f26f978.jpg"
+                                alt="Image 5">
+                        </a>
+                        <div class="overlay">
+                            <h5>Yaourt phô mai</h5>
+                            <p>Quán cô Sương - số 11/1B Khe Sanh, Tp. Đà Lạt, Lâm Đồng</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="https://example.com/image-source" target="_blank">
+                            <img src="https://i.pinimg.com/736x/03/7b/1f/037b1fb545791c2699c6252481ddbaad.jpg"
+                                alt="Image 6">
+                        </a>
+                        <div class="overlay">
+                            <h5>Kem bơ</h5>
+                            <p>Chạm Đà Lạt - Số 27 Nguyễn Trãi, Phường 9, Thành phố Đà Lạt</p>
+                            <div class="dg">
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-column">
+                <h3>Vi Vu Đà Lạt</h3>
+                <p>Du lịch không chỉ là đi đến một nơi khác, mà là khám phá những điều mới mẻ. Hãy cùng Vi vu Đà Lạt
+                    nhé!</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Blogs</h3>
+                <div class="news-item">
+                    <div class="news-content">
+                        <a href="mùa hoa Đà Lạt.html">Mùa Hoa Đà Lạt</a> <br>
+                        <span class="date"> Thứ 2, 08/4/2024</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <a href="trainghiem.html">Trải nghiệm thú vị</a> <br>
+                        <span class="date">Thứ 5, 07/3/2024</span>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <a href="lovestory.html">Câu chuyện tình yêu</a><br>
+                        <span class="date">Thứ 4, 06/02/2024 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="icon-address"><i class="bi bi-house"></i></div>
+                    <p>12 Nguyễn Văn Bảo, Gò Vấp</p>
+                </div>
+                <div class="contact-info">
+                    <div class="icon-phone"><i class="bi bi-telephone"></i></div>
+                    <p>+1234567890</p>
+                </div>
+                <div class="contact-info">
+                    <div class="icon-mail"><i class="bi bi-envelope"></i></div>
+                    <p>vivudalat@gmail.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Vi Vu Da Lat. All rights reserved.
+            </div>
+        </footer>
+</body>
+
+</html>

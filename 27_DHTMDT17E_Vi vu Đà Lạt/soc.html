@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SÓC HOMESTAY</title>
+    <link rel="stylesheet" href="soc.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/53/59/11/535911be0a99ba45c1b34c55a2af7041.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- MENU -->
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Về Chúng Tôi</a></li>
+                    <li class="blog-dropdown">
+                        <a href="hi.html">Du Lịch Đà Lạt</a>
+                        <div class="blog-dropdown-content">
+                            <a href="kinh nghiệm.html">Kinh Nghiệm</a>
+                            <a href="blog.html">Blog</a>
+                        </div>
+                    <li class="service-dropdown">
+                        <a href="tour.html">Tour Du Lịch</a>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li>
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<a href="login.html">
+    <svg height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 60.671 60.671" xml:space="preserve">
+<g>
+	<g>
+		<ellipse style="fill:#010002;" cx="30.336" cy="12.097" rx="11.997" ry="12.097"/>
+		<path style="fill:#010002;" d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9
+			C48.354,35.818,42.661,30.079,35.64,30.079z"/>
+	</g>
+</g>
+</svg>
+</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+
+    <!--banner  -->
+
+   
+    <header class="page-header">
+        <h1 class="text-banner">SÓC HOMESTAY</h1>
+      </header>
+    
+    <!--BODY  -->
+    <div class="container">
+        <div class="book-ticket">
+            <div class="images-container">
+
+                <div class="images">
+                    <img src="https://pix8.agoda.net/hotelImages/32194389/0/f11af86549a60584a5c60c2532245804.jpg?ca=29&ce=0&s=1024x768" alt="" id="hinh">
+                    <img src="https://pix8.agoda.net/hotelImages/32194389/0/e5b590ac038500ccf72a12a1ef5b6b68.jpg?ca=29&ce=0&s=1024x768" alt="" id="hinh">
+                    <img src="https://pix8.agoda.net/hotelImages/32194389/0/279162e77cc574bd1e8bbb315da8bf05.jpg?ca=29&ce=0&s=1024x768" alt="" id="hinh">
+                    <img src="https://pix8.agoda.net/hotelImages/32194389/0/a324d0d57729e361bd29e7b7c241238e.jpg?ca=29&ce=0&s=1024x768" alt="" id="hinh">
+                </div>
+
+                <button class="left-button" onclick="prev()"><i class="bi bi-chevron-left"></i></button>
+                <button class="right-button" onclick="next()"><i class="bi bi-chevron-right"></i></button>
+            </div>
+            <div class="info-book">
+                <h1> <i class="bi bi-geo-alt-fill"></i> SÓC HOMESTAY</h1>
+
+                <script src="stars.js"></script>
+
+                <div class="tour-soc">
+                    <div class="stars">
+                    </div>
+                </div>
+                
+                <div class="price"> Giá: 280.000đ/đêm - 1.200.000đ/đêm </div>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning text-white " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    ĐẶT NGAY
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ĐẶT NGAY</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="bookingForm">
+                                    <!-- Các trường input -->
+                                    <input type="text" id="fname" name="fname" required placeholder="Họ và tên"><br>
+                                    <input type="tel" id="phone" name="phone" required placeholder="Điện thoại"><br>
+                                    <input type="email" id="email" name="email" required placeholder="Email"><br>
+                                    <input type="date" id="start_date" name="start_date" required
+                                        placeholder="Ngày đặt"><br>
+                                    <input type="number" id="adults" name="adults" min="1" required
+                                        placeholder="Số lượng người"><br>
+                                    
+                                    <div id="errorMessages" style="color: red;"></div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning" id="bookTourBtn">Đặt Ngay</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="booktour.js"></script>
+
+            </div>
+
+        </div>
+
+
+        <!-- THÔNG TIN HÀNH TRÌNH -->
+        <div class="page-container" >
+            <div class="page-content" style=" display: flex; overflow: visible;align-items: flex-start;">
+    
+                <div class="info-tour"  style="margin: 0;">
+                    <h1>THÔNG TIN HOMESTAY</h1>
+                    <hr>
+                    <div class="content">
+                      <h4>Đà Lạt bạn đến là khách - Về Sóc homestay bạn là người thân</h4>
+                      <p>Trải nghiệm cùng nhóm bạn thân của mình tại Sóc Homestay, tự nhiên mọi thứ tan đi vì ở nhà của Sóc bạn sẽ được rất nhiều thứ.</p>
+                       <p>Tiêu chí của nhà Sóc là "Sạch thật - Chân Thật - Chu Đáo", tiện nghi hiện đại nhưng vẫn mang lại cảm giác ấm áp của một phong cách cổ vì mọi vật bày trí trong nhà của Sóc tỉ mỉ, tinh tế và cảm giác mọi thứ thật vừa đủ.</p>
+                       <img src="https://tophomestay.vn/wp-content/uploads/9fba44d71932a89fa06a21703c0bfbed/700/2020/02/10/phong_khach_soc_homestay_1_1581342199680.jpg" alt="">
+                        <p>Về với ổ của Sóc, bạn sẽ được đi chơi chung với nhiều bạn "Sóc" mới nữa vì "Sóc chủ" sẽ tổ chức cho các bạn trẻ đi trải nghiệm miễn phí nhằm đem lại niềm vui mới cho khách hàng.</p>
+                        <p>Và lần đầu mình được trải nghiệm hái hồng, rất thích lại còn vui. Vườn hồng "Sóc chủ" dẫn đi rất nhiều trái, cảm giác hồng rất sạch và quả cũng đẹp nên vừa được ăn ngon vừa còn được sefile.</p>
+                        <p>Sóc lại có điểm cộng tuyệt đối cho nhân viên, luôn tận tâm và giải đáp khách hàng một cách nhanh chóng phản hồi tin nhắn rất nhanh, tiếp tân nhiệt tình. Chị quản lý rất dễ thương nên mới hoàn toàn khẳng định được về nhà Sóc như là người thân.</p>
+                        <p>Chúng mình hoàn toàn bị thuyết phục vì ở đây mọi người vô cùng ân cần, chia sẻ cho nhau niềm vui như một gia đình hoàn hảo, đầu tư chu đáo từ bếp điện, lò vi sóng, ấm đun nước, có cả lò BBQ…nên tối cứ làm BBQ, nhâm nhi bên bếp lửa trong cái lạnh của Đà Lạt.</p>
+                        <img src="https://tophomestay.vn/wp-content/uploads/9fba44d71932a89fa06a21703c0bfbed/700/2020/02/10/bbq_soc_homestay_3_1581341658091.jpg" alt="">
+                        <p>Lên Đà Lạt muốn tắm vào buổi sáng cũng chẳng sợ đóng băng vì nhà tắm có máy nước nóng, dầu gội, sữa tắm đầy đủ có cả nhãn dán nữa.</p>
+                        <p>Một lần đến và chẳng quên không gian của Sóc quá dễ chịu, đẹp, rất thoải mái đúng như slogan mà Sóc mang lại, đến với Sóc bạn như là người nhà thân thiết.</p>
+                        <h4>Phòng tại Sóc Homestay</h4>
+                        <p>Sóc là ngôi nhà ấm áp được tạo bởi hương gỗ nồng thắm, thiết kề từ gỗ - thân thiện môi trường, tạo cảm giác gần gũi với thiên nhiên, về nhà Sóc như về với thiên nhiên mặc sức cho chúng ta thơ dại cùng bạn bè, thoát khỏi những bức tường cổ kính, trông thật mệt mỏi và khó chịu của thành phố.</p>
+                        <img src="https://tophomestay.vn/wp-content/uploads/9fba44d71932a89fa06a21703c0bfbed/700/2020/03/18/phong_2_soc_homestay_tophometay_2_1584522559211.jpg" alt="">
+                        <img src="https://tophomestay.vn/wp-content/uploads/9fba44d71932a89fa06a21703c0bfbed/700/2020/03/18/phong_4_soc_homestay_tophometay_1_1584522736676.jpg" alt="">
+                        <h4>Giá phòng</h4>
+                        <li>Phòng 1 giường 2 người: 280.000 đồng/đêm</li>
+                        <li>Phòng 2 giường 4 người: 500.000 đồng/đêm</li>
+                        <li>Phòng gia đình 6-8 người: 1.200.000 đồng/đêm</li>
+
+
+                    </div>
+                   
+                    <!-- HIỆN ĐÁNH GIÁ Ở ĐÂY -->
+                    <div>
+                        <h1>BÌNH LUẬN</h1>
+                        <hr>
+                    </div>
+                    <div class="result" id="result"></div>
+
+                    <h1>GỬI ĐÁNH GIÁ</h1>
+                    <hr>
+
+                    <div class="form">
+                        <div class="comment-form">
+                            <input type="text" value="soc" id="tour_name" hidden>
+                            <!-- Khung nhập bình luận -->
+                            <div class="form-group">
+                                <textarea id="description" placeholder="Viết bình luận của bạn"></textarea>
+                            </div>
+
+
+                            <!-- Phần đánh giá sao -->
+                            <div class="form-group rating">
+
+                                <label>
+                                    <input type="radio" name="rating" value="1" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5" />
+                                    ★
+                                </label>
+                            </div>
+
+                            <!-- Nút đăng bình luận -->
+                            <button type="button" class="btn btn-primary" onclick="addComment()">Đăng bình luận</button>
+                        </div>
+                    </div>
+                </div>
+                    <!-- SIDEBAR -->
+              
+                <div class="sidebar" id="sidebar" >
+                    <div class="sidebar-itiems">
+                        <div class="search-banner">
+                            <div id="searchForm">
+                                <h2>Địa điểm </h2>
+                                <input autocomplete="off" type="text" id="searchInput" placeholder="Nhập địa điểm muốn đến..."> 
+                            </div>
+                        <script src="search.js"></script>
+                    </div>
+                    <div class="sidebar-itiems">
+                        <h2>Cảnh đẹp</h2>
+                        <div class="ins-img">
+                            <img src="https://i.pinimg.com/564x/dd/65/31/dd653173bd7f62513e387bd8d57538cf.jpg"
+                                alt="Image 1" class="ins">
+                            <img src="https://i.pinimg.com/564x/ba/af/52/baaf528d78ee12f00c016f423d84f53e.jpg"
+                                alt="Image 2" class="ins">
+                            <img src="https://i.pinimg.com/564x/04/d6/73/04d6732080fd6b488f098e5e6f7700eb.jpg"
+                                alt="Image 3" class="ins">
+                            <img src="https://i.pinimg.com/564x/a2/6e/74/a26e7406836c9323f97ee83d4384e3f4.jpg"
+                                alt="Image 4" class="ins">
+                            <img src="https://i.pinimg.com/564x/c2/38/65/c23865862035f9f6ad78788b517a2ec6.jpg"
+                                alt="Image 5" class="ins">
+                            <img src="https://i.pinimg.com/564x/a8/71/14/a87114c00d829b1b3300313295219396.jpg"
+                                alt="Image 6" class="ins">
+                            <!-- Thêm ảnh Instagram khác nếu cần -->
+                        </div>
+                    </div>
+                    <div class="sidebar-itiems">
+                        <h2>Khách sạn khác</h2>
+                        <div class="popular-post">
+                            <a href="anvilla.html">
+                                <img src="https://dalattrongtoi.com/media/images/thumbnail/khach-san-da-lat-plaza-2_thumb.jpg"
+                                    alt="https://dalatreview.vn/wp-content/uploads/2020/08/2-10.jpg">
+                                <h4> AN VILLA YERSIN</h4>
+                            </a>
+                            <a href="nhaminh.html">
+                                <img src="https://dalattrongtoi.com/media/upload/images/Homestay/nha%20minh%20homestay.jpg"
+                                    alt="">
+                                <h4> NHÀ MÌNH HOMESTAY   </h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Vi Vu Đà Lạt</h3>
+            <p>Du lịch không chỉ là đi đến một nơi khác, mà là khám phá những điều mới mẻ. Hãy cùng Vi vu Đà Lạt nhé!
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+            <h3>Blogs</h3>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="mùa hoa Đà Lạt.html">Mùa Hoa Đà Lạt</a> <br>
+                    <span class="date"> Thứ 2, 08/4/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Trải nghiệm thú vị</a> <br>
+                    <span class="date">Thứ 5, 07/3/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Câu chuyện tình yêu</a><br>
+                    <span class="date">Thứ 4, 06/02/2024 </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <div class="icon-address"><i class="bi bi-house"></i></div>
+                <p>12 Nguyễn Văn Bảo, Gò Vấp</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-phone"><i class="bi bi-telephone"></i></div>
+                <p>+1234567890</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-mail"><i class="bi bi-envelope"></i></div>
+                <p>vivudalat@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./comment.js"></script>
+    <script>
+         // BANNER
+    var arr_hinh=[
+    "https://dalattrongtoi.com/media/upload/images/Homestay/nha%20minh%20homestay.jpg",
+     "https://dalattrongtoi.com/media/upload/images/Homestay/nha%20minh%20home.jpg"
+];
+var index=0;
+function prev() {
+    index--;
+    if(index<-0) index=arr_hinh.length-1;
+    document.getElementById("hinh").src=arr_hinh[index];
+}
+
+function next() {
+    index++;
+    if(index==arr_hinh.length) index=0;
+    document.getElementById("hinh").src=arr_hinh[index];
+}
+    </script>
+</body>

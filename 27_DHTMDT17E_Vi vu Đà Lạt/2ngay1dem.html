@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMBO 2 NGÀY 1 ĐÊM</title>
+    <link rel="stylesheet" href="2ngay1dem.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/53/59/11/535911be0a99ba45c1b34c55a2af7041.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- MENU -->
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Về Chúng Tôi</a></li>
+                    <li class="blog-dropdown">
+                        <a href="hi.html">Du Lịch Đà Lạt</a>
+                        <div class="blog-dropdown-content">
+                            <a href="kinh nghiệm.html">Kinh Nghiệm</a>
+                            <a href="blog.html">Blog</a>
+                        </div>
+                    <li class="service-dropdown">
+                        <a href="tour.html">Tour Du Lịch</a>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li>
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<a href="login.html">
+    <svg height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 60.671 60.671" xml:space="preserve">
+<g>
+	<g>
+		<ellipse style="fill:#010002;" cx="30.336" cy="12.097" rx="11.997" ry="12.097"/>
+		<path style="fill:#010002;" d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9
+			C48.354,35.818,42.661,30.079,35.64,30.079z"/>
+	</g>
+</g>
+</svg>
+</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+
+    <!--banner  -->
+
+   
+    <header class="page-header">
+        <h1 class="text-banner">COMBO DU LỊCH ĐÀ LẠT 2 NGÀY 1 ĐÊM</h1>
+      </header>
+    
+    <!--BODY  -->
+    <div class="container">
+        <div class="book-ticket">
+            <div class="images-container">
+
+                <div class="images">
+                    <img src="https://i.pinimg.com/736x/68/30/ed/6830edfa025545a8320a4a928ffa81c0.jpg" alt="" id="hinh">
+                    <img src="https://i.pinimg.com/564x/fc/e4/68/fce468dd3b2b5dcef6aaede17e2e49c1.jpg" alt="" id="hinh">
+                    <img src="https://i.pinimg.com/564x/30/a6/c2/30a6c285867c513e592615cf28d7091d.jpg" alt="" id="hinh">
+                    <img src="https://i.pinimg.com/564x/30/a6/c2/30a6c285867c513e592615cf28d7091d.jpg" alt="" id="hinh">
+                </div>
+
+                <button class="left-button" onclick="prev()"><i class="bi bi-chevron-left"></i></button>
+                <button class="right-button" onclick="next()"><i class="bi bi-chevron-right"></i></button>
+            </div>
+            <div class="info-book">
+                <h1> <i class="bi bi-geo-alt-fill"></i> COMBO DU LỊCH ĐÀ LẠT 2 NGÀY 1 ĐÊM</h1>
+
+                <script src="stars.js"></script>
+
+                <div class="tour-2ngay1dem">
+                    <div class="stars">
+                    </div>
+                </div>
+                <p>Thời gian: 2 ngày 1 đêm</p>
+                <div class="price"> Giá: 1.0000.000đ/người <span>1.500.000đ/người</span></div>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning text-white " data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    ĐẶT TOUR
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ĐẶT TOUR</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="bookingForm">
+                                    <!-- Các trường input -->
+                                    <input type="text" id="fname" name="fname" required placeholder="Họ và tên"><br>
+                                    <input type="tel" id="phone" name="phone" required placeholder="Điện thoại"><br>
+                                    <input type="email" id="email" name="email" required placeholder="Email"><br>
+                                    <input type="date" id="start_date" name="start_date" required
+                                        placeholder="Ngày đi"><br>
+                                    <input type="number" id="adults" name="adults" min="1" required
+                                        placeholder="Người lớn"><br>
+                                    <input type="number" id="children" name="children" min="0" value="0" required
+                                        placeholder="Trẻ em(<11 tuổi)"><br>
+                                    <div id="errorMessages" style="color: red;"></div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning" id="bookTourBtn">Đặt Tour</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="booktour.js"></script>
+
+            </div>
+
+        </div>
+
+
+        <!-- THÔNG TIN HÀNH TRÌNH -->
+        <div class="page-container" >
+            <div class="page-content" style=" display: flex; overflow: visible;align-items: flex-start;">
+    
+                <div class="info-tour"  style="margin: 0;">
+                    <h1>THÔNG TIN HÀNH TRÌNH</h1>
+                    <hr>
+                    <div class="content">
+                        <img src="https://i.pinimg.com/564x/5e/87/76/5e877663beabdb9ad4a9c0d830812bdd.jpg" alt="">
+                        <p>Đà Lạt sắp bước vào mùa Festival hoành tráng nhất năm và cũng là mùa Đà Lạt đẹp nhất trong
+                            năm. Để chào đón một mùa lễ hội hoa năm 2022, Đà Lạt Trong Tôi có những chương trình tour
+                            mới cực hấp dẫn và có nhiều ưu đãi dành cho quý khách hàng</p>
+                        <p>Với giá chỉ từ 1.500.000/ khách </p>
+                        <p>Bao gồm</p>
+                        <li>1 đêm tại khách sạn 2-3 sao gần trung tâm, gần các khu ăn uống, đặc sản của Đà Lạt </li>
+
+                        <li>Tour du lịch check in tại những điểm hot nhất tại Đà Lạt </li>
+
+                        <li>Xe đời mới đưa đón suốt hành trình </li>
+
+                        <li>Bữa trưa tại nhà hàng </li>
+
+                        <li>Hướng dẫn viên nhiệt tình, vui vẻ, hỗ trợ chụp hình cho quý khách </li>
+
+                        <li>Nước uống trên xe </li>
+
+                    </div>
+                    <!-- LỊCH TRÌNH -->
+                    <h1>LỊCH TRÌNH</h1>
+                    <hr>
+                    <div class="content">
+                        <h4>Ngày đầu tiên khởi hành:8h-16h</h4>
+                        <div class="day1">
+                            <li>Tham quan Đồi Chè Cầu Đất – check in cối xay gió - chiêm ngưỡng đồi chè
+                                bạt ngàn trong nắng sớm.</li>
+                            <li>Vườn Hồng Treo - Tham quan trải nghiệm, chụp ảnh với hồng treo gió.</li>
+                            <li>Lạc vào cánh đồng hoa và những chú cừu xinh đẹp tại Nắng Cà phê</li>
+                            <li> Ixora - Tọa độ sống ảo đang hot với các ngôi nhà gỗ, hồ nước bé xinh, xích đu, hay bãi
+                                đá cực chất.</li>
+                            <li>Ghé thăm sa mạc thu nhỏ giữa lòng Đà Lạt - Kombiland (bạn sẽ có ngàn kiểu ảnh độc lạ ở
+                                xứ sở xương rồng này)</li>
+                            <li> F cánh đồng hoa - nơi các bạn có thể hóa thân thành những nàng công chúa trong các câu
+                                chuyện cổ tích.</li>
+                            <li>Vườn dâu tây công nghệ cao - Tham quan, chụp ảnh, trải nghiệm và mua dâu tây tại vườn.
+                            </li>
+                        </div>
+                        <img src="https://i.pinimg.com/564x/38/13/81/3813819a3e7361862dbb122049dd42a9.jpg" alt="">
+
+                    </div>
+                    <div class="content">
+                        <h4>Ngày thứ 2: 8h-16h</h4>
+                        <div class="day2">
+                            <li>Thác Datanla - Trải nghiệm máng trượt dài nhất Đông Nam Á với chiều dài 2400m ( chi phí
+                                tự túc).</li>
+                            <li>Đồi Cáp Treo Đà Lạt (Ngắm toàn cảnh Đà Lạt từ trên cao; Quý khách có thể mua vé cáp treo
+                                1 chiều với giá 80 000đ/1 người để thoải mái ngắm nhìn Đà Lạt - chi phí tự túc).</li>
+                            <li>Thiền Viện Trúc Lâm - Ngôi chùa đẹp tựa tiên cảnh</li>
+                            <li> Hồ Tuyền Lâm</li>
+                            <li>Phân viện sinh học - khám phá, tìm hiểu về những loài động vật quý hiếm của cao nguyên
+                                Lâm Viên.</li>
+                            <li>Núi Langbiang – chinh phục nóc nhà Tây Nguyên (không bao gồm vé xe jeep)</li>
+                            <li>Vườn Dâu Tây Công Nghệ Cao</li>
+                            <li>Nhà Thờ Domain - nhà thờ màu Hồng dễ thương giữa trung tâm thành phố</li>
+                        </div>
+                        <img src="https://i.pinimg.com/564x/68/30/ed/6830edfa025545a8320a4a928ffa81c0.jpg" alt="">
+                    </div>
+
+                    <!-- GIÁ VÉ -->
+                    <h1> GIÁ VÉ</h1>
+                    <hr>
+                    <div class="content">
+                        <h4>Giá trọn gói: 1.500.000đ/người</h4>
+                        <h4>*Giá tour bao gồm:</h4>
+                        <li>Xe đời mới đưa đón tại khách sạn và trong suốt quá trình tham quan. (tour ghép đoàn)</li>
+                        <li> Hướng dẫn viên du lịch chuyên nghiệp và tận tình.</li>
+                        <li> Hướng dẫn viên du lịch chuyên nghiệp và tận tình.</li>
+                        <li>Nước uống 1 chai Aquafina 500ml/ngày/ 1 khách</li>
+                        <li>Bảo hiểm du lịch</li>
+                        <li>Khách sạn 2 sao gần trung tâm</li>
+                        <li>Chi phí bữa ăn trưa</li>
+                        <h4>*Giá tour không bao gồm:</h4>
+                        <li> Hóa đơn VAT (10%)</li>
+                        <li>Vé tham gia các hoạt động tại điểm tham quan như: và các dịch vụ trong điểm du lịch</li>
+                        <li>Chi phí cá nhân phát sinh khác ngoài chương trình tour.</li>
+                        <li>Chi phí bữa sáng</li>
+
+                        <h4>*Lưu ý:</h4>
+                        <li>Gía áp dụng cho nhóm đi từ 2 khách</li>
+                        <li>Trẻ em 1m – 1m1 phụ thu 50% giá tour</li>
+                        <li>Trẻ em 1m1 trở lên tính 100% vé</li>
+                        <li>Gía áp dụng cho mùa thấp điểm: 2,3,4,5,9,10,11</li>
+                        <li>Hỗ trợ nâng cấp hạng phòng / tour theo yêu cầu của khách hàng </li>
+                        <li>Hỗ trợ tư vấn và thiết kế chương trình tour riêng theo yêu cầu của quý khách </li>
+                    </div>
+                    <!-- HIỆN ĐÁNH GIÁ Ở ĐÂY -->
+                    <div>
+                        <h1>BÌNH LUẬN</h1>
+                        <hr>
+                    </div>
+                    <div class="result" id="result"></div>
+
+                    <h1>GỬI ĐÁNH GIÁ</h1>
+                    <hr>
+
+                    <div class="form">
+                        <div class="comment-form">
+                            <input type="text" value="2ngay1dem" id="tour_name" hidden>
+                            <!-- Khung nhập bình luận -->
+                            <div class="form-group">
+                                <textarea id="description" placeholder="Viết bình luận của bạn"></textarea>
+                            </div>
+
+
+                            <!-- Phần đánh giá sao -->
+                            <div class="form-group rating">
+
+                                <label>
+                                    <input type="radio" name="rating" value="1" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="2" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="3" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="4" />
+                                    ★
+                                </label>
+                                <label>
+                                    <input type="radio" name="rating" value="5" />
+                                    ★
+                                </label>
+                            </div>
+
+                            <!-- Nút đăng bình luận -->
+                            <button type="button" class="btn btn-primary" onclick="addComment()">Đăng bình luận</button>
+                        </div>
+                    </div>
+                </div>
+                    <!-- SIDEBAR -->
+              
+                <div class="sidebar" id="sidebar" >
+                    <div class="sidebar-itiems">
+                        <div class="search-banner">
+                            <div id="searchForm">
+                                <h2>Địa điểm </h2>
+                                <input autocomplete="off" type="text" id="searchInput" placeholder="Nhập địa điểm muốn đến..."> 
+                            </div>
+                        <script src="search.js"></script>
+                    </div>
+                    <div class="sidebar-itiems">
+                        <h2>Cảnh đẹp</h2>
+                        <div class="ins-img">
+                            <img src="https://i.pinimg.com/564x/dd/65/31/dd653173bd7f62513e387bd8d57538cf.jpg"
+                                alt="Image 1" class="ins">
+                            <img src="https://i.pinimg.com/564x/ba/af/52/baaf528d78ee12f00c016f423d84f53e.jpg"
+                                alt="Image 2" class="ins">
+                            <img src="https://i.pinimg.com/564x/04/d6/73/04d6732080fd6b488f098e5e6f7700eb.jpg"
+                                alt="Image 3" class="ins">
+                            <img src="https://i.pinimg.com/564x/a2/6e/74/a26e7406836c9323f97ee83d4384e3f4.jpg"
+                                alt="Image 4" class="ins">
+                            <img src="https://i.pinimg.com/564x/c2/38/65/c23865862035f9f6ad78788b517a2ec6.jpg"
+                                alt="Image 5" class="ins">
+                            <img src="https://i.pinimg.com/564x/a8/71/14/a87114c00d829b1b3300313295219396.jpg"
+                                alt="Image 6" class="ins">
+                            <!-- Thêm ảnh Instagram khác nếu cần -->
+                        </div>
+                    </div>
+                    <div class="sidebar-itiems">
+                        <h2>Các Tour Phổ Biến</h2>
+                        <div class="popular-post">
+                            <a href="sup.html">
+                                <img src="https://i.pinimg.com/564x/3a/0d/18/3a0d18475e553fcea90b946b8b20ed9b.jpg"
+                                    alt="">
+                                <h4>TOUR CHÈO SUP TẠI HỒ TUYỀN LÂM</h4>
+                            </a>
+                            <a href="pongour.html">
+                                <img src="https://i.pinimg.com/474x/02/85/6f/02856f054420d464297947120b5bc4c2.jpg"
+                                    alt="">
+                                <h4> TOUR THÁC PONGOUR ĐÀ LẠT</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Vi Vu Đà Lạt</h3>
+            <p>Du lịch không chỉ là đi đến một nơi khác, mà là khám phá những điều mới mẻ. Hãy cùng Vi vu Đà Lạt nhé!
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-column">
+            <h3>Blogs</h3>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="mùa hoa Đà Lạt.html">Mùa Hoa Đà Lạt</a> <br>
+                    <span class="date"> Thứ 2, 08/4/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Trải nghiệm thú vị</a> <br>
+                    <span class="date">Thứ 5, 07/3/2024</span>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="news-content">
+                    <a href="#">Câu chuyện tình yêu</a><br>
+                    <span class="date">Thứ 4, 06/02/2024 </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <div class="icon-address"><i class="bi bi-house"></i></div>
+                <p>12 Nguyễn Văn Bảo, Gò Vấp</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-phone"><i class="bi bi-telephone"></i></div>
+                <p>+1234567890</p>
+            </div>
+            <div class="contact-info">
+                <div class="icon-mail"><i class="bi bi-envelope"></i></div>
+                <p>vivudalat@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./comment.js"></script>
+    <script>
+         // BANNER
+    var arr_hinh=[
+    "https://i.pinimg.com/736x/68/30/ed/6830edfa025545a8320a4a928ffa81c0.jpg",
+    "https://i.pinimg.com/564x/fc/e4/68/fce468dd3b2b5dcef6aaede17e2e49c1.jpg",
+    "https://i.pinimg.com/564x/30/a6/c2/30a6c285867c513e592615cf28d7091d.jpg",
+    "https://i.pinimg.com/564x/4f/3f/cc/4f3fcc214267658458c9328dd1b4f7d5.jpg"
+    
+];
+var index=0;
+function prev() {
+    index--;
+    if(index<-0) index=arr_hinh.length-1;
+    document.getElementById("hinh").src=arr_hinh[index];
+}
+
+function next() {
+    index++;
+    if(index==arr_hinh.length) index=0;
+    document.getElementById("hinh").src=arr_hinh[index];
+}
+    </script>
+</body>

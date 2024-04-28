@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ------------ VARIABLES ------------ */
+:root{
+  /* FONT */
+  --font: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  ;
+
+  /* COLORS */
+  --color: #9176FF;
+  --bg-color: #f4f4f4;
+}
+
+/* ------------ BASE ------------ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font);
+  height: 100vh;
+  background-color: none;
+}
+
+/* menu */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 0 20px;
+  z-index: 1000;
+}
+.menu {
+  background-color: #FDF5E6;
+  overflow: hidden;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  font-size:25px;
+  padding: 0;
+}
+
+.menu li {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  float: left;
+  padding: 15px 30px;
+  margin: 0 10px;
+}
+
+.menu li:hover {
+  background-color: 0;
+}
+
+.menu a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #D3D3D3;
+}
+
+#toggle {
+  display: none;
+  background: 0;
+  color: #000000;
+  text-align: right;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}   
+/*Thêm CSS của blog  */
+.menu .blog-dropdown:hover .blog-dropdown-content {
+  display: block;
+}
+.blog-dropdown-content {
+  display: none; /* Ẩn các phần tử con mặc định */
+  position: absolute;
+  background-color: #aba9a3;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+.blog-dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+}
+.blog-dropdown-content a:hover {
+  background-color: #ddd;
+  color:#000000;
+}
+  /*Thêm CSS của Service  */
+.menu .service-dropdown:hover .service-dropdown-content {
+  display: block;
+}
+.service-dropdown-content {
+  display: none; /* Ẩn các phần tử con mặc định */
+  position: absolute;
+  background-color: #aba9a3;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.service-dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+}
+.service-dropdown-content a:hover {
+  background-color: #ddd;
+  color:#000000;
+}
+#toggle {
+    display: none;
+    background: 0;
+    color: #000000;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+ 
+@media screen and (max-width: 768px) {
+    #main-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    #toggle {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+}
+.page-header {
+  position: relative;
+  background: url(HinhAnh/ảnh.jpg) no-repeat center top fixed;
+  background-size: cover;
+  height: 550px;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 10;
+  font-size: 65px;
+  color:rgb(248, 248, 248);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Container */
+  .content{
+  margin: 80px;
+}
+
+/* Block */
+.block {
+  border: 0px solid #ccc;
+  color: #000;
+  font-family: var(--font);
+}
+
+.block h2 {
+  padding: 10px;
+  font-size: 35px;
+}
+
+.block h3 {
+  margin-top: 0px;
+  padding: 10px;
+}
+
+.block p {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+/* Row */
+.row {
+  display: flex;
+}
+
+/* Column */
+.column {
+  padding: 5px;
+}
+
+.column img {
+  width: 100%;
+  height: 350px;
+  display: block;
+  padding: 10px;
+}
+
+
+.p1 {
+
+  padding: 10px;
+}
+
+/* ----------- SLIDER ------------ */
+.swiper{
+  width: 100%;
+}
+
+.swiper-wrapper{
+  padding-top: 50px;
+  width: 100%;
+  height: 50em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom:80px;
+}
+
+.card{
+  width: 25em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+  padding: 2em 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1px);
+}
+
+.card__image{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid var(--color);
+  padding: 3px;
+  margin-bottom: 2em;
+}
+
+.card__image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: .2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card__name{
+  color: var(--color);
+}
+
+.card__text{
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1em 0;
+}
+
+.icons a {
+  font-size:25px;
+  padding:20px;
+  color: var(--color);
+}
+/* Phân công công việc */
+table {
+  font-family: var(--font);
+  border-collapse: collapse;
+  border: 1px solid var(--color);
+  width: 90%;
+  margin:0 120px 100px;
+
+}
+
+th, td {
+  border: 1px solid var(--color);
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: var(--color);
+}
+
+tr {
+  background-color: #FFFFFF;
+}
+ td {
+  text-align: left;
+ }
+  /*css footer*/
+  .footer {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    position: relative;
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #FDF5E6;
+    color: rgb(32, 32, 32);
+    z-index: 1;
+  
+  }
+  .footer-column {
+    flex: 1;
+    padding: 0 20px;
+    margin-left:100px;
+    position: relative;
+    width:33%;
+  }
+  
+  .footer-column h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin:30px 0 20px 0;
+  }
+  
+  .footer-column p {
+    font-size: 20px;
+    padding-right:0px;
+  }
+  .social-icons a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top:20px;
+    margin-right: 10px;
+    background-size: cover;
+    color: #0f0f0f;
+  }
+  
+  .news-item {
+    display: flex;
+    margin-bottom: 10px;
+    
+  }
+  .news-item button{
+    border:none;
+    color:none;
+  }
+ 
+  .news-content {
+    flex: 1;
+  }
+  .news-content a{
+    font-size:22px;
+    text-decoration-line: none;
+    color:#0b0b0b
+  }
+  .news-content a:hover{
+    color:#eb9328;
+  }
+  .date {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .contact-info {
+    margin-top:10px;
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size:22px;
+    line-height: 2; 
+  }
+
+  .contact-info p {
+    margin-left: 10px;
+  }
+  
+  .icon-address,
+  .icon-phone,
+  .icon-mail {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top:-30px;
+  }
+  /* Định dạng cho phần bản quyền */
+  .footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+/* hoa rơi */
+.falling-leaves {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9999;
+  pointer-events: none;
+}
+.leaf-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.leaf-scene div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  will-change: transform;
+}
+.leaf-scene div:nth-child(odd) {
+  background: url(https://statics.pancake.vn/web-media/4a/9d/5a/1b/f0a3c768986e797295023a1d83db974e61d6f712c8782161a3b8fd61.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.leaf-scene div:nth-child(even) {
+  background: url(https://statics.pancake.vn/web-media/fb/36/4d/d3/eac3afbbeab3f635717dbac88c38351b2f5ce85039cb41db95897ba0.png);
+  background-size: 100%;
+}

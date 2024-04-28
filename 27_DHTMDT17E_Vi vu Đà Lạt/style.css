@@ -1,0 +1,856 @@
+body{
+    margin: 0;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+
+}
+/* menu */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 0 20px;
+  z-index: 1000;
+
+}
+.menu {
+  background-color: #FDF5E6;
+  overflow: hidden;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  font-size:25px;
+  padding: 0;
+}
+
+.menu li {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  float: left;
+  padding: 15px 30px;
+  margin: 0 10px;
+}
+
+.menu li:hover {
+  background-color: 0;
+}
+
+.menu a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #D3D3D3;
+  text-decoration: none;
+
+}
+
+#toggle {
+  display: none;
+  background: 0;
+  color: #000000;
+  text-align: right;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}   
+/*Thêm CSS của blog  */
+.menu .blog-dropdown:hover .blog-dropdown-content {
+  display: block;
+}
+.blog-dropdown-content {
+  display: none; /* Ẩn các phần tử con mặc định */
+  position: absolute;
+  background-color: #aba9a3;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+.blog-dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+}
+.blog-dropdown-content a:hover {
+  background-color: #ddd;
+  color:#000000;
+  text-decoration: none;
+}
+  /*Thêm CSS của Service  */
+.menu .service-dropdown:hover .service-dropdown-content {
+  display: block;
+}
+.service-dropdown-content {
+  display: none; /* Ẩn các phần tử con mặc định */
+  position: absolute;
+  background-color: #aba9a3;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.service-dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+}
+.service-dropdown-content a:hover {
+  background-color: #ddd;
+  color:#000000;
+}
+
+@media screen and (max-width: 768px) {
+    #main-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    #toggle {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+}
+
+/*CSS container*/  
+.container{
+    width: 1200px;
+    background: white;
+    min-height: 100vh;
+    margin: 0px auto;
+    position: relative;
+}
+
+/*CSS logo*/
+.logo {
+  height: 200px;
+  margin-top: 65px;
+  border: 1px solid 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url("HinhAnh/Thiết kế chưa có tên (5).png");
+  background-size: 30%;
+}
+
+.logo .circle1 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid 0;
+  background-color: #FDF5E6;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.logo .circle2 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: 0;
+  position: absolute;
+  left: 51%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Sacramento", cursive; 
+  cursor: pointer;
+}
+
+/* CSS cho banner */
+.banner {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  }
+  
+  .slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  animation: slideShow 18s infinite;
+  opacity: 0;
+  }
+  
+  .slide.show {
+  opacity: 1;
+  }
+  
+  .slide:nth-child(1) {
+  animation-delay: 0s;
+  }
+  
+  .slide:nth-child(2) {
+  animation-delay: 6s;
+  }
+  
+  .slide:nth-child(3) {
+  animation-delay: 12s;
+  }
+  .search-banner #searchForm{
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  .suggestions {
+    position: absolute;
+    top: calc(100% + 5px); /* Đặt khoảng cách giữa input và dropdown */
+    left: 0;
+    width: calc(100% - 2px); /* Sử dụng chiều rộng của input */
+    z-index: 999;
+    background-color: #fff; /* Đặt background màu trắng */
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px; /* Bo tròn góc cho dropdown */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Thêm shadow cho dropdown */
+    box-sizing: border-box; /* Đảm bảo kích thước tính cả border */
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background-color: #f0f0f0;
+}
+
+
+  /* Add more animation-delay rules here for each additional slide */
+  
+  @keyframes slideShow {
+  0% {opacity: 0; transform: translateX(100%);}
+  6% {opacity: 1; transform: translateX(0%);}
+  36% {opacity: 1; transform: translateX(0%);}
+  42% {opacity: 0; transform: translateX(-100%);}
+  100% {opacity: 0; transform: translateX(-100%);}
+  }
+  
+  .dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+  }
+  
+  .dialog-content {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .dialog-content h1 {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: 50px;
+  }
+  .dialog-content p {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: 20px;
+  }
+  
+  
+  .search-banner {
+  margin-top: 20px;
+  padding-bottom: 50px;
+  }
+  
+  .search-banner input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  width: 50%;
+  }
+  
+  .search-banner button[type="submit"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00CC66;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+  }
+  .search-banner button:hover {
+     background-color: #008000; 
+    }
+  
+/*CSS tiêu điểm*/
+.blocks-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.block i {
+  font-size: 3rem;
+  margin-bottom: 0px;
+  color: #4a4a4a;
+}
+
+.block h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.block h3:hover{
+  color: #FFDEAD;
+  cursor: pointer;
+}
+.block p i {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+}
+
+/*CSS tiêu đề*/
+.head {
+  padding-bottom: 0px;
+  width: 100%;
+  height: 200px;
+  top: 70px;
+  border: 1px solid 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: 0;
+}
+
+.head .rectangle1 {
+  height: 120px;
+  width: 220px;
+  border: 1px solid 0;
+  background-color: #FDF5E6;
+  position: absolute;
+  left: 50%;
+  top: 1%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.head .rectangle2 {
+  height: 120px;
+  width: 220px;
+  border: 1px solid black;
+  background-color: 0;
+  position: absolute;
+  left: 51%;
+  transform: translate(-47%, -72%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  cursor: pointer;
+}
+
+hr-style {
+  border: 0;
+  height: 1px;
+  background-image: black;
+  position: absolute;
+}
+
+/*CSS content*/
+.section {
+    padding: 0px;
+  }
+
+  .section-1 {
+    width: 100%;
+    background-color: #fff;
+    height: 150px;
+  }
+
+  .section-2 {
+    width: 100%;
+  }
+
+  .column {
+    padding: 20px;
+  }
+
+  .block1 {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+.row1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+.column1 {
+      width: 30%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+.column1 img {
+      width: 100%;
+      height: 100%;
+    }
+
+.row2 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+.column2 {
+      width: 50%; 
+      padding: 0 15px; 
+      box-sizing: border-box; 
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      background: url("HinhAnh/Thiết kế chưa có tên (2).png");
+      background-size: cover;
+
+    }
+    .column21 {
+      width: 50%; 
+      padding: 0 15px; 
+      box-sizing: border-box; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+.box1 h1 {
+  padding: 10px;
+  text-align: right;
+  font-size: 60px;
+  color: orange;
+  background: none;
+}
+
+.box1 {
+  width: 70%;
+  padding-left: 50px;
+  box-sizing: border-box;
+  white-space: nowrap; /* Ngăn chữ bị ngắt dòng */
+  overflow: hidden; /* Ẩn phần chữ vượt ra khỏi bound của phần tử */
+
+}
+
+    .box1 h1 {
+      animation: marquee 6s linear infinite; /* Sử dụng animation để tạo hiệu ứng di chuyển lặp vô hạn */
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%); /* Bắt đầu vị trí phải ngoài */
+      }
+      100% {
+        transform: translateX(-100%); /* Di chuyển sang trái ngoài khung */
+      }
+    }
+
+.box2 {
+     width: 70%;
+     background-color: #f2f2f2; 
+     padding: 20px; 
+     border-radius: 10px; 
+     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+
+    }
+
+.text-1 {
+     color: #333;
+     font-size: 35px; 
+     margin-bottom: 10px; 
+     font-weight: bold;
+    }
+
+.text-2 {
+     color: #666; 
+     font-size: 16px; 
+     line-height: 1.6; 
+     margin-bottom: 20px; 
+     text-align: justify;
+    }
+
+.btn-1 {
+     display: inline-block; 
+     padding: 10px 20px; 
+     background-color: #fff; 
+     color: #000; 
+     text-decoration: none; 
+     border-radius: 10px; 
+      border: 2px solid orange;
+     transition: background-color 0.3s ease; 
+    }
+
+.btn-1:hover {
+     background-color: orange; 
+    }
+
+/*CSS tiêu đề*/
+.head1 {
+  padding: 0px;
+  width: 100%;
+  height: 150px;
+  top: 100px;
+  border: 0px solid 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: 0;
+ 
+}
+
+.head1 .rectangle1 {
+  height: 120px;
+  width: 220px;
+  border: 1px solid 0;
+  background-color: #FDF5E6;
+  position: absolute;
+  left: 50%;
+  top: 1%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.head1 .rectangle2 {
+  height: 120px;
+  width: 220px;
+  border: 1px solid black;
+  background-color: 0;
+  position: absolute;
+  left: 51%;
+  top: 25%;
+  transform: translate(-48%, -70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  cursor: pointer;
+}
+
+.head2 {
+  padding: 0px;
+  width: 100%;
+  height: 150px;
+  top: 220px;
+  border: 0px solid 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: 0;
+ 
+}
+
+.head2 .rectangle1 {
+  height: 120px;
+  width: 220px;
+  border: 1px solid 0;
+  background-color: #FDF5E6;
+  position: absolute;
+  left: 50%;
+  top: 1%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.head2 .rectangle2 {
+  height: 120px;
+  width: 220px;
+  border: 1px solid black;
+  background-color: 0;
+  position: absolute;
+  left: 51%;
+  top: 25%;
+  transform: translate(-48%, -70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  cursor: pointer;
+}
+/*CSS Ẩm thực*/
+.thuvien {
+  width: 100%;
+  height: 700px;
+  }
+.image-food {
+    width: 100%;
+    margin-bottom: 100px;
+    padding-top: 180px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image-item {
+    cursor: pointer;
+    position: relative;
+    width: 30%;
+    margin: 20px;
+    border-radius: 0;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .image-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .image-item:hover img {
+    opacity: 0.5;
+  }
+  
+  .overlay {
+    font-family: Papyrus;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .image-item:hover .overlay {
+    height: 100%;
+  }
+  
+  .overlay h5 {
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay p {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .image-grid {
+    width: 100%;
+    height: 600px;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image-item {
+    cursor: pointer;
+    position: relative;
+    width: 30%;
+    margin: 20px;
+    border-radius: 0;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .image-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .image-item:hover img {
+    opacity: 0.5;
+  }
+  
+  .overlay {
+    font-family: Papyrus;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .image-item:hover .overlay {
+    height: 100%;
+  }
+  
+  .overlay h5 {
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay p {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /*css footer*/
+  .footer {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    position: relative;
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1000px;
+    background-color: #FDF5E6;
+    color: rgb(32, 32, 32);
+    z-index: 1;
+  }
+  .footer-column {
+    flex: 1;
+    padding: 0 20px;
+    margin-left:100px;
+    position: relative;
+    width:33%;
+  }
+  .footer-column h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .footer-column p {
+    font-size: 20px;
+    padding-right:0px;
+  }
+  .social-icons a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: cover;
+    color: #0f0f0f;
+  }
+  .news-item {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .news-item button{
+    border:none;
+    color:none;
+  }
+  .news-content {
+    flex: 1;
+  }
+  .news-content a{
+    font-size:22px;
+    text-decoration-line: none;
+    color:#0b0b0b
+  }
+  .news-content a:hover{
+    color:#eb9328;
+  }
+  .date {
+    font-size: 12px;
+    color: #ccc;
+  } 
+  .contact-info {
+    margin-top:10px;
+    display:flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size:22px;
+    line-height: 2; 
+  }
+  .contact-info p {
+    margin-left: 10px;
+  }
+  .icon-address,
+  .icon-phone,
+  .icon-mail {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top:-30px;
+  }
+  /* Định dạng cho phần bản quyền */
+  .footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+.stars i{
+  font-size: 1.7rem;
+  color:orange;
+  }
+  .dg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
